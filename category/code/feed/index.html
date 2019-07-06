@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Code &#8211; ForceLearn</title>
+	<atom:link href="https://www.forcelearn.com/category/code/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.forcelearn.com</link>
+	<description>Learn Salesforce Developement tip and tricks</description>
+	<lastBuildDate>Sun, 28 Apr 2019 20:18:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+
+<image>
+	<url>https://www.forcelearn.com/wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png</url>
+	<title>Code &#8211; ForceLearn</title>
+	<link>https://www.forcelearn.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Custom roll up summary to find count of contacts on account</title>
+		<link>https://www.forcelearn.com/custom-rollup-summary-to-find-count-of-contacts-on-account/</link>
+		<pubDate>Tue, 21 Nov 2017 10:14:29 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=250</guid>
+		<description><![CDATA[<p>Custom roll up summary By using formula field we can achieve only single records using field but roll up summary is helps to calculate value from related set of records. In order to create roll up summary their must be master detail relationship between objects and we can auto assign using roll up summary fields. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/custom-rollup-summary-to-find-count-of-contacts-on-account/">Custom roll up summary to find count of contacts on account</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h1>Custom roll up summary</h1>
+<p>By using formula field we can achieve only single records using field but <strong>roll up summary</strong> is helps to calculate value from related set of records. In order to create roll up summary their must be master detail relationship between objects and we can auto assign using roll up summary fields. It helps you to find count,sum,max,min of requested fields.</p>
+<h3>trigger to count number of contacts on account by Custom roll up summary</h3>
+<h1>Business case :</h1>
+<h3>As per requirement, System Administrator need to know count of associated contacts to single account.</h3>
+<p>In order to achieve requirement we can use out of box functionality with standard roll up summary  or custom roll up summary, Here I am explain about Custom Roll up Summary.</p>
+<p></p><pre class="crayon-plain-tag">// Custom roll up summary trigger to find count of contacts on account 
+Trigger NumberOfContactsCounts on Contact (after insert){
+Set&lt;Id&gt; AccountSetId = new Set&lt;Id&gt;();
+List&lt;Account&gt; AccountList = new List&lt;Account&gt;();
+List&lt;AggregateResult&gt; AggreList = new List&lt;AggregateResult&gt;();
+Map&lt;String,Double&gt; acmap = new Map&lt;String,Double&gt;();
+for (Contact con: Trigger.new){
+AccountSetId.add(con.accountId);
+}
+if(AccountSetId.size()&gt;0){
+AggreList = [select AccountId aid,Count(Id) i from Contact where AccountId IN :AccountSetId group by AccountId];
+}
+
+for(AggregateResult q : AggreList){
+acmap.put((String)q.get(&lsquo;aid&rsquo;),(Double)q.get(&lsquo;i&rsquo;));
+}
+
+for (Account acc:[Select Id,Total_Count__c From Account Where Id in: AccountSetId]){
+
+acc.Total_Count__c = acmap.get(acc.Id);
+AccountList.add(acc);
+}
+update AccountList;
+}</pre><p></p>
+<p>Keep visiting us for more updates</p>
+No tags for this post.<p>The post <a rel="nofollow" href="https://www.forcelearn.com/custom-rollup-summary-to-find-count-of-contacts-on-account/">Custom roll up summary to find count of contacts on account</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Display List of Accounts with delete button on Lightning Component</title>
+		<link>https://www.forcelearn.com/display-list-accounts-delete-button-lightning-component/</link>
+		<comments>https://www.forcelearn.com/display-list-accounts-delete-button-lightning-component/#comments</comments>
+		<pubDate>Sat, 04 Nov 2017 11:47:28 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=164</guid>
+		<description><![CDATA[<p>Today Iam here to explain how to display list of accounts with delete button on Lightning component Business case :  User need to show list of accounts and with delete button on display their page Solution : we helped by designing lightning component Step1 : Create a controller class Path setup- UserMenu &#8211; Developer Console [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/display-list-accounts-delete-button-lightning-component/">Display List of Accounts with delete button on Lightning Component</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Today Iam here to explain how to display list of accounts with delete button on Lightning component</p>
+<p>Business case :  User need to show list of accounts and with delete button on display their page</p>
+<p>Solution : we helped by designing lightning component</p>
+<p>Step1 : Create a controller class<br />
+Path setup- UserMenu &#8211; Developer Console -File-New Apex Class</p>
+<p>AccountsController</p><pre class="crayon-plain-tag">public class AccController {
+ @AuraEnabled
+ public static List getAccounts() {
+ return [SELECT Id, name, industry, Type, NumberOfEmployees, TickerSymbol, Phone FROM Account ORDER BY createdDate ASC];
+ }
+}</pre><p>Step2 : Create a lightning Component<br />
+Path setup- UserMenu &#8211; Developer Console -File-New Lightning Component</p>
+<p>Account List Component</p><pre class="crayon-plain-tag">&lt;aura:component controller=&quot;AccController&quot;&gt;
+  &lt;aura:attribute name=&quot;accounts&quot; type=&quot;List&quot; /&gt;
+  &lt;aura:handler name=&quot;init&quot; value=&quot;{!this}&quot; action=&quot;{!c.doInit}&quot; /&gt;
+  &lt;!--
+    Use a data table from the Lightning Design System:
+    https://www.lightningdesignsystem.com/components/data-tables/
+  --&gt;
+  &lt;table class=&quot;slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer slds-table--fixed-layout&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr class=&quot;slds-text-heading--label&quot;&gt;
+        &lt;th scope=&quot;col&quot;&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;ID&quot;&gt;ID&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;Name&quot;&gt;Name&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;Type&quot;&gt;Type&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;Number Of Employees&quot;&gt;Number Of Employees&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;Ticker Symbol&quot;&gt;Ticker Symbol&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;Phone&quot;&gt;Phone&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;Delete&quot;&gt;Delete&lt;/div&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;!-- Use the Apex model and controller to fetch server side data --&gt;
+      &lt;aura:iteration items=&quot;{!v.accounts}&quot; var=&quot;account&quot;&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;{!account.Id}&quot;&gt;{!account.Id}&lt;/div&gt;&lt;/th&gt;
+          &lt;td&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;{!account.Name}&quot;&gt;{!account.Name}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;{!account.Type}&quot;&gt;{!account.Type}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;{!account.NumberOfEmployees}&quot;&gt;{!account.NumberOfEmployees}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;{!account.TickerSymbol}&quot;&gt;{!account.TickerSymbol}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;div class=&quot;slds-truncate&quot; title=&quot;{!account.Phone}&quot;&gt;{!account.Phone}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;form class=&quot;account-form&quot; onsubmit=&quot;{!c.deleteAccount}&quot;&gt;
+              &lt;input type=&quot;hidden&quot; value=&quot;{!account.Name}&quot; class=&quot;account-name&quot; /&gt;
+              &lt;!--
+                Use a Lightning Base Component
+                To display an icon next to the label
+               --&gt;
+              &lt;lightning:button label=&quot;Delete&quot;
+                                iconName=&quot;utility:delete&quot;
+                                iconPosition=&quot;left&quot;
+                                variant=&quot;destructive&quot;
+                                /&gt;
+            &lt;/form&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/aura:iteration&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/aura:component&gt;</pre><p>Step3 : Create Controller for lightning Component<br />
+ Path : Click on controller left side of our lightning component or with shortcut ctrl+shift+2</p>
+<p>Account List Controller</p>
+<p></p><pre class="crayon-plain-tag">({
+  doInit: function(component, event, helper) {      
+    // Fetch the account list from the Apex controller   
+    helper.getAccountList(component);
+  },
+  deleteAccount: function(component, event, helper) {
+    // Prevent the form from getting submitted
+    event.preventDefault();
+
+    // Get the value from the field that's in the form
+    var accountName = event.target.getElementsByClassName('account-name')[0].value;
+    confirm('Delete the ' + accountName + ' account? (don&rsquo;t worry, this won&rsquo;t actually work!)');
+  }
+})</pre><p>&nbsp;</p>
+<p>Step4 : Create helper for lightning Component<br />
+Path : Click on helper left side of our lightning component or with shortcut ctrl+shift+3</p>
+<p>Account List Helper</p><pre class="crayon-plain-tag">({
+// Fetch the accounts from the Apex controller
+getAccountList: function(component) {
+var action = component.get('c.getAccounts');
+
+// Set up the callback
+var self = this;
+action.setCallback(this, function(actionResult) {
+component.set('v.accounts', actionResult.getReturnValue());
+});
+$A.enqueueAction(action);
+}
+})</pre><p>&nbsp;</p>
+<p>Step5 : Create lightning Component application<br />
+Path : setup- UserMenu &#8211; Developer Console -File-New Lightning Application</p>
+<p>Account List Application</p><pre class="crayon-plain-tag">&lt;aura:application extends=&quot;force:slds&quot;&gt;
+  &lt;c:AccountList /&gt;
+&lt;/aura:application&gt;</pre><p>&nbsp;</p>
+<p>Hola !! , we have seen list of accounts with delete button</p>
+<p>If you find intersting please share it to others and subscribe us <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Keep watching us for more updates</p>
+No tags for this post.<p>The post <a rel="nofollow" href="https://www.forcelearn.com/display-list-accounts-delete-button-lightning-component/">Display List of Accounts with delete button on Lightning Component</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/display-list-accounts-delete-button-lightning-component/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>how to update lookup field by using trigger</title>
+		<link>https://www.forcelearn.com/how-to-update-lookup-field-by-using-trigger/</link>
+		<comments>https://www.forcelearn.com/how-to-update-lookup-field-by-using-trigger/#respond</comments>
+		<pubDate>Tue, 31 Oct 2017 05:48:13 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=157</guid>
+		<description><![CDATA[<p>Hi Guys, how to update lookup field by using trigger Today iam going to explain update lookup field, I have lot of developer faced this issue. In order to resolve this we can use process builder too Business case : Customer whats to update company(lookup) on expense__c based on another company__c(lookup) of object resource__c Here [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/how-to-update-lookup-field-by-using-trigger/">how to update lookup field by using trigger</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><strong>Hi</strong> Guys,</p>
+<h1><strong>how to update lookup field by using trigger</strong></h1>
+<p>Today iam going to explain update lookup field, I have lot of developer faced this issue.</p>
+<p>In order to resolve this we can use process builder too</p>
+<p>Business case : Customer whats to update company(lookup) on expense__c based on another company__c(lookup) of object resource__c</p>
+<p>Here is trigger</p><pre class="crayon-plain-tag">trigger updatelookup on Expense__c (before Insert){ 
+   set&lt;id&gt; regionsID = new set&lt;id&gt;(); for(Expense__c expRep: Trigger.New){ 
+       regionsID.add(expRep.region__c);
+    } 
+   map&lt;id,string&gt; mapRegionToCompanyName = new map&lt;id,string&gt;(); 
+       for(region__c Region : [select id,resource__r.company__c from region__c where id in:regionsID]){ 
+        mapRegionToCompanyName.put(region.id,region.resource__r.company__c);
+ } 
+     for(Expense__c expRep: Trigger.New){ 
+      expRep.company__c = mapRegionToCompanyName.get(expRep.region__c); 
+} 
+}</pre><p>Test class for above trigger</p><pre class="crayon-plain-tag">@isTest
+public class updatecootest {
+ static testmethod void myunittest(){ 
+ 
+ Region__c r = new Region__c(Name ='China');
+ insert r; 
+ 
+ Company__c com = new Company__c(Name ='Infosys');
+ insert com; 
+ 
+ Expense__c er = new Expense__c(Name='Travel',Region__c= r.id,Company__c= com.id);
+ insert er; 
+ 
+ Expense__c erc = [SELECT Id, Company__c, name FROM Expense__c];
+ test.starttest();
+ update erc;
+ test.stopTest();
+ }
+}</pre><p>&nbsp;</p>
+<p>Hola !! , we have update lookup field</p>
+<p>If you find intersting please share it to others and subscribe us <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Keep watching us for more updates</p>
+No tags for this post.<p>The post <a rel="nofollow" href="https://www.forcelearn.com/how-to-update-lookup-field-by-using-trigger/">how to update lookup field by using trigger</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/how-to-update-lookup-field-by-using-trigger/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Create New opportunity based on account criteria</title>
+		<link>https://www.forcelearn.com/create-new-opportunity-based-account-criteria/</link>
+		<comments>https://www.forcelearn.com/create-new-opportunity-based-account-criteria/#respond</comments>
+		<pubDate>Sun, 22 Oct 2017 17:36:55 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=120</guid>
+		<description><![CDATA[<p>Hi Guys, Hope you enjoyed Diwali 🙂 Today I came here with a scenario which i faced recently Business case : If Account rating is &#8220;Hot&#8221;, need to create new opportunity. So we need to Create New opportunity based on account criteria we can achieve this with process builder and trigger. Here I try to [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/create-new-opportunity-based-account-criteria/">Create New opportunity based on account criteria</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p class="">Hi Guys,</p>
+<p class="">Hope you enjoyed Diwali <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Today I came here with a scenario which i faced recently</p>
+<p>Business case : If Account rating is &#8220;Hot&#8221;, need to create new opportunity. So we need to Create New opportunity based on account criteria</p>
+<p>we can achieve this with process builder and trigger. Here I try to explained you in way on trigger</p><pre class="crayon-plain-tag">trigger createOpportunity on Account (after insert) {
+
+List oppsToUpdate = new List();
+for(Account ac : Trigger.new) {
+ if (ac.Rating== 'Hot') {
+ Opportunity o = new Opportunity (); 
+ o.StageName = 'Closed Won'; 
+ o.CloseDate = Date.today(); 
+ o.Name = 'Opp';
+ oppsToUpdate.add(o);
+ }
+
+}
+ insert oppsToUpdate; 
+}</pre><p>Here it is test class to code coverage</p>
+<h1>Test Class</h1>
+<p></p><pre class="crayon-plain-tag">@isTest
+private class opp_Test{
+ static testMethod void test_createOpportunity(){
+ test.startTest();
+ account a = new account();
+ a.name = 'ForceLearn Pvt Ltd';
+ a.rating = 'hot';
+ Insert a; 
+ test.stopTest();
+ }
+}</pre><p></p>
+No tags for this post.<p>The post <a rel="nofollow" href="https://www.forcelearn.com/create-new-opportunity-based-account-criteria/">Create New opportunity based on account criteria</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/create-new-opportunity-based-account-criteria/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

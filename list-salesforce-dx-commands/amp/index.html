@@ -1,0 +1,578 @@
+<!doctype html>
+<html amp lang="en-US">
+
+<!-- Mirrored from www.forcelearn.com/list-salesforce-dx-commands/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:31:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	    <script async custom-element="amp-ad" src="../../../cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    	<title>SalesforceDX (salesforce CLI) list of commands - ForceLearn</title>
+		<link rel="canonical" href="../index.html" />
+	<script type='text/javascript' src='../../../cdn.ampproject.org/v0.js' async></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"ForceLearn","logo":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2017\/11\/cropped-4416041-designstyle-boots-l-32x32.png","width":32,"height":32}},"@type":"BlogPosting","mainEntityOfPage":"https:\/\/www.forcelearn.com\/list-salesforce-dx-commands\/","headline":"List of salesforce DX commands","datePublished":"2017-11-27T13:20:56+00:00","dateModified":"2017-11-27T13:21:52+00:00","author":{"@type":"Person","name":"forcelearn"}}</script>
+	<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 770px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( ../../wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{margin-top:12px;margin-bottom:12px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-fbb711c{font-size:12px;height:18px;line-height:18px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-6986ee0{min-height:16.8px;line-height:16.8px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-c86a462{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{font-size:12px;line-height:15px}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.html">
+										<amp-img src="../../wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png" width="32" height="32" class="amp-wp-site-icon"></amp-img>
+						<span class="amp-site-title">
+				ForceLearn			</span>
+		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">List of salesforce DX commands</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/bbfb2fb66335c9c0bad976a3a88dda85?s=24&amp;r=g" alt="forcelearn" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">forcelearn</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2017-11-27T13:20:56+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="">
+
+</div>
+<p class="dpsp-share-text">Sharing is caring!</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad7" id="quads-ad7" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad3" id="quads-ad3" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad4" id="quads-ad4" style="">
+
+</div>
+<div id="dpsp-content-top" class="dpsp-content-wrapper dpsp-shape-circle dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content "><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.forcelearn.com%2Flist-salesforce-dx-commands%2F&amp;t=List+of+salesforce+DX+commands" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=List+of+salesforce+DX+commands&amp;url=https%3A%2F%2Fwww.forcelearn.com%2Flist-salesforce-dx-commands%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.forcelearn.com%2Flist-salesforce-dx-commands%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="#" class="dpsp-network-btn dpsp-pinterest"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Pinterest</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.forcelearn.com%2Flist-salesforce-dx-commands%2F&amp;title=List+of+salesforce+DX+commands&amp;mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div><h1>Hi Folks,</h1>
+<p>Nice to see you</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad10" id="quads-ad10" style="">
+
+</div>
+
+<p>Hope you visited my previous post on</p>
+<h1 class="entry-title"><a href="../../salesforcedx-installation-and-tutorial/index.html" target="_blank" rel="noopener">Learn SalesforceDX Installation and tutorial</a></h1>
+<p>if not please visit above link to get more information on salesforceDX.</p>
+<p>Today I want to provide you list of commands which are available in salesforce CLI</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2410778a2718269206" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:doc:commands:list
+
+force:alias:list                 # list username aliases for the Salesforce CLI
+ force:alias:set                 # set username aliases for the Salesforce CLI
+ force:apex:class:create         # create an Apex class
+ force:apex:execute              # execute anonymous Apex code
+ force:apex:log:get              # fetch a debug log
+ force:apex:log:list             # list debug logs
+ force:apex:test:report          # display test results
+ force:apex:test:run             # invoke Apex tests
+ force:auth:jwt:grant            # authorize an org using the JWT flow
+ force:auth:sfdxurl:store        # authorize an org using an SFDX auth URL
+ force:auth:web:login            # authorize an org using the web login flow
+ force:config:get                # get config var values for given names
+ force:config:list               # list config vars for the Salesforce CLI
+ force:config:set                # set config vars for the Salesforce CLI
+ force:data:bulk:delete          #bulk delete records from a csv file
+ force:data:bulk:status          # view the status of a bulk data load job or batch
+ force:data:bulk:upsert          # bulk upsert records from a CSV file
+ force:data:record:create        # create a record
+ force:data:record:delete        # delete a record
+ force:data:record:get           # view a record
+ force:data:record:update        # update a record
+ force:data:soql:query           # execute a SOQL query
+ force:data:tree:export          # export data from an org into sObject tree format option
+ force:data:tree:import          # import data into an org using SObject Tree Save A
+ force:doc:commands:display      # display help for force commands
+ force:doc:commands:list         # list the force commands
+ force:lightning:app:create      # create a Lightning app
+ force:lightning:component:create  # create a Lightning component
+ force:lightning:event:create      # create a Lightning event
+ force:lightning:interface:create  # create a Lightning interface
+ force:lightning:lint              # analyse (lint) Lightning component code
+ force:lightning:test:create       # create a Lightning test
+ force:lightning:test:install      # install Lightning Testing Service unmanaged packa
+ force:lightning:test:run          # invoke Lightning component tests
+ force:limits:api:display          # display current org’s limits
+ force:mdapi:convert               # convert Metadata API source into the Salesforce D
+ force:mdapi:deploy                # deploy metadata to an org using Metadata API
+ force:mdapi:deploy:report         # check the status of a metadata deployment
+ force:mdapi:retrieve              # retrieve metadata from an org using Metadata API
+ force:mdapi:retrieve:report       # check the status of a metadata retrieval
+ force:org:create                  # create a scratch org
+ force:org:delete                  # mark a scratch org for deletion
+ force:org:display                 # get org description
+ force:org:list                    # list all orgs you’ve created or authenticated to
+ force:org:open                    # open an org in your browser
+ force:org:shape:create            # create a snapshot of org edition, features, and l
+ force:org:shape:delete            # delete all org shapes for a target org
+ force:org:shape:list              # list all org shapes you’ve created
+ force:package1:version:create     # create a first-generation package version in the
+ force:package1:version:create:get # retrieve the status of a package version creation
+ force:package1:version:display    # display details about a first-generation package
+ force:package1:version:list       # list package versions for the specified first-gen
+ force:package2:create             # create a second-generation package
+ force:package2:list               # list all second-generation packages in the Dev Hu
+ force:package2:update             # update a second-generation package
+ force:package2:version:create     # create a second-generation package version
+ force:package2:version:create:get # retrieve a package version creation request
+ force:package2:version:create:list # list package version creation requests
+ force:package2:version:get        # retrieve a package version in the Dev Hub org
+ force:package2:version:list       # list all package versions in the Dev Hub org
+ force:package2:version:update     # update a second-generation package version
+ force:package:install             # install a package in the target org
+ force:package:install:get         # retrieve the status of a package installation req
+ force:package:installed:list      # list the org’s installed packages
+ force:package:uninstall           # uninstall a second-generation package from the ta
+ force:package:uninstall:get       # retrieve status of package uninstall request
+ force:project:create              # create a new SFDX project
+ force:project:upgrade             # update project config files to the latest format
+ force:schema:sobject:describe     # describe an object
+ force:schema:sobject:list         # list all objects of a specified category
+ force:source:convert              # convert Salesforce DX source into the Metadata AP
+ force:source:open                 # edit a Lightning Page with Lightning App Builder
+ force:source:pull                 # pull source from the scratch org to the project
+ force:source:push                 # push source to an org from the project
+ force:source:status               # list local changes and/or changes in a scratch or
+ force:user:create                 # create a user for a scratch org
+ force:user:display                # displays information about a user of a scratch or
+ force:user:list                   # lists all users of a scratch org
+ force:user:password:generate      # generate a password for scratch org users
+ force:user:permset:assign         # assign a permission set to one or more users of a
+ force:visualforce:component:create # create a Visualforce component
+ force:visualforce:page:create     # create a Visualforce page</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-2">2</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-4">4</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-6">6</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-8">8</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-10">10</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-12">12</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-14">14</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-16">16</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-18">18</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-20">20</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-22">22</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-24">24</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-26">26</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-28">28</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-30">30</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-32">32</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-34">34</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-36">36</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-38">38</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-40">40</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-42">42</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-44">44</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-46">46</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-48">48</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-49">49</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-50">50</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-51">51</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-52">52</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-53">53</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-54">54</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-55">55</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-56">56</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-57">57</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-58">58</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-59">59</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-60">60</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-61">61</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-62">62</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-63">63</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-64">64</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-65">65</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-66">66</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-67">67</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-68">68</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-69">69</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-70">70</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-71">71</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-72">72</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-73">73</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-74">74</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-75">75</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-76">76</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-77">77</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-78">78</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-79">79</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-80">80</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-81">81</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-82">82</div><div class="crayon-num" data-line="crayon-5cea2410778a2718269206-83">83</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2410778a2718269206-84">84</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2410778a2718269206-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">doc</span><span class="crayon-o">:</span><span class="crayon-v">commands</span><span class="crayon-o">:</span><span class="crayon-e">list</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-2"> </div><div class="crayon-line" id="crayon-5cea2410778a2718269206-3"><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">alias</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">                 </span><span class="crayon-p"># list username aliases for the Salesforce CLI</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-4"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">alias</span><span class="crayon-o">:</span><span class="crayon-v">set</span><span class="crayon-h">                 </span><span class="crayon-p"># set username aliases for the Salesforce CLI</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-5"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">apex</span><span class="crayon-o">:</span><span class="crayon-t">class</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">         </span><span class="crayon-p"># create an Apex class</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-6"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">apex</span><span class="crayon-o">:</span><span class="crayon-v">execute</span><span class="crayon-h">              </span><span class="crayon-p"># execute anonymous Apex code</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-7"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">apex</span><span class="crayon-o">:</span><span class="crayon-v">log</span><span class="crayon-o">:</span><span class="crayon-v">get</span><span class="crayon-h">              </span><span class="crayon-p"># fetch a debug log</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-8"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">apex</span><span class="crayon-o">:</span><span class="crayon-v">log</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">             </span><span class="crayon-p"># list debug logs</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-9"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">apex</span><span class="crayon-o">:</span><span class="crayon-v">test</span><span class="crayon-o">:</span><span class="crayon-v">report</span><span class="crayon-h">          </span><span class="crayon-p"># display test results</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-10"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">apex</span><span class="crayon-o">:</span><span class="crayon-v">test</span><span class="crayon-o">:</span><span class="crayon-v">run</span><span class="crayon-h">             </span><span class="crayon-p"># invoke Apex tests</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-11"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">auth</span><span class="crayon-o">:</span><span class="crayon-v">jwt</span><span class="crayon-o">:</span><span class="crayon-v">grant</span><span class="crayon-h">            </span><span class="crayon-p"># authorize an org using the JWT flow</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-12"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">auth</span><span class="crayon-o">:</span><span class="crayon-v">sfdxurl</span><span class="crayon-o">:</span><span class="crayon-v">store</span><span class="crayon-h">        </span><span class="crayon-p"># authorize an org using an SFDX auth URL</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-13"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">auth</span><span class="crayon-o">:</span><span class="crayon-v">web</span><span class="crayon-o">:</span><span class="crayon-v">login</span><span class="crayon-h">            </span><span class="crayon-p"># authorize an org using the web login flow</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-14"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">config</span><span class="crayon-o">:</span><span class="crayon-v">get</span><span class="crayon-h">                </span><span class="crayon-p"># get config var values for given names</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-15"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">config</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">               </span><span class="crayon-p"># list config vars for the Salesforce CLI</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-16"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">config</span><span class="crayon-o">:</span><span class="crayon-v">set</span><span class="crayon-h">                </span><span class="crayon-p"># set config vars for the Salesforce CLI</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-17"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">bulk</span><span class="crayon-o">:</span><span class="crayon-v">delete</span><span class="crayon-h">          </span><span class="crayon-p">#bulk delete records from a csv file</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-18"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">bulk</span><span class="crayon-o">:</span><span class="crayon-v">status</span><span class="crayon-h">          </span><span class="crayon-p"># view the status of a bulk data load job or batch</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-19"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">bulk</span><span class="crayon-o">:</span><span class="crayon-v">upsert</span><span class="crayon-h">          </span><span class="crayon-p"># bulk upsert records from a CSV file</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-20"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">record</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">        </span><span class="crayon-p"># create a record</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-21"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">record</span><span class="crayon-o">:</span><span class="crayon-v">delete</span><span class="crayon-h">        </span><span class="crayon-p"># delete a record</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-22"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">record</span><span class="crayon-o">:</span><span class="crayon-v">get</span><span class="crayon-h">           </span><span class="crayon-p"># view a record</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-23"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">record</span><span class="crayon-o">:</span><span class="crayon-v">update</span><span class="crayon-h">        </span><span class="crayon-p"># update a record</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-24"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">soql</span><span class="crayon-o">:</span><span class="crayon-v">query</span><span class="crayon-h">           </span><span class="crayon-p"># execute a SOQL query</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-25"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">tree</span><span class="crayon-o">:</span><span class="crayon-v">export</span><span class="crayon-h">          </span><span class="crayon-p"># export data from an org into sObject tree format option</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-26"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">data</span><span class="crayon-o">:</span><span class="crayon-v">tree</span><span class="crayon-o">:</span><span class="crayon-v">import</span><span class="crayon-h">          </span><span class="crayon-p"># import data into an org using SObject Tree Save A</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-27"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">doc</span><span class="crayon-o">:</span><span class="crayon-v">commands</span><span class="crayon-o">:</span><span class="crayon-v">display</span><span class="crayon-h">      </span><span class="crayon-p"># display help for force commands</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-28"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">doc</span><span class="crayon-o">:</span><span class="crayon-v">commands</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">         </span><span class="crayon-p"># list the force commands</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-29"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-v">app</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">      </span><span class="crayon-p"># create a Lightning app</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-30"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-v">component</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">  </span><span class="crayon-p"># create a Lightning component</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-31"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-v">event</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">      </span><span class="crayon-p"># create a Lightning event</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-32"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-t">interface</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">  </span><span class="crayon-p"># create a Lightning interface</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-33"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-v">lint</span><span class="crayon-h">              </span><span class="crayon-p"># analyse (lint) Lightning component code</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-34"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-v">test</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">       </span><span class="crayon-p"># create a Lightning test</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-35"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-v">test</span><span class="crayon-o">:</span><span class="crayon-v">install</span><span class="crayon-h">      </span><span class="crayon-p"># install Lightning Testing Service unmanaged packa</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-36"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-v">test</span><span class="crayon-o">:</span><span class="crayon-v">run</span><span class="crayon-h">          </span><span class="crayon-p"># invoke Lightning component tests</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-37"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">limits</span><span class="crayon-o">:</span><span class="crayon-v">api</span><span class="crayon-o">:</span><span class="crayon-v">display</span><span class="crayon-h">          </span><span class="crayon-p"># display current org’s limits</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-38"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">mdapi</span><span class="crayon-o">:</span><span class="crayon-v">convert</span><span class="crayon-h">               </span><span class="crayon-p"># convert Metadata API source into the Salesforce D</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-39"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">mdapi</span><span class="crayon-o">:</span><span class="crayon-v">deploy</span><span class="crayon-h">                </span><span class="crayon-p"># deploy metadata to an org using Metadata API</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-40"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">mdapi</span><span class="crayon-o">:</span><span class="crayon-v">deploy</span><span class="crayon-o">:</span><span class="crayon-v">report</span><span class="crayon-h">         </span><span class="crayon-p"># check the status of a metadata deployment</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-41"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">mdapi</span><span class="crayon-o">:</span><span class="crayon-v">retrieve</span><span class="crayon-h">              </span><span class="crayon-p"># retrieve metadata from an org using Metadata API</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-42"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">mdapi</span><span class="crayon-o">:</span><span class="crayon-v">retrieve</span><span class="crayon-o">:</span><span class="crayon-v">report</span><span class="crayon-h">       </span><span class="crayon-p"># check the status of a metadata retrieval</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-43"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">                  </span><span class="crayon-p"># create a scratch org</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-44"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">delete</span><span class="crayon-h">                  </span><span class="crayon-p"># mark a scratch org for deletion</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-45"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">display</span><span class="crayon-h">                 </span><span class="crayon-p"># get org description</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-46"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">                    </span><span class="crayon-p"># list all orgs you’ve created or authenticated to</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-47"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">open</span><span class="crayon-h">                    </span><span class="crayon-p"># open an org in your browser</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-48"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">shape</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">            </span><span class="crayon-p"># create a snapshot of org edition, features, and l</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-49"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">shape</span><span class="crayon-o">:</span><span class="crayon-v">delete</span><span class="crayon-h">            </span><span class="crayon-p"># delete all org shapes for a target org</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-50"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">shape</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">              </span><span class="crayon-p"># list all org shapes you’ve created</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-51"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package1</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">     </span><span class="crayon-p"># create a first-generation package version in the</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-52"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package1</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-o">:</span><span class="crayon-v">get</span><span class="crayon-h"> </span><span class="crayon-p"># retrieve the status of a package version creation</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-53"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package1</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">display</span><span class="crayon-h">    </span><span class="crayon-p"># display details about a first-generation package</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-54"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package1</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">       </span><span class="crayon-p"># list package versions for the specified first-gen</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-55"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">             </span><span class="crayon-p"># create a second-generation package</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-56"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">               </span><span class="crayon-p"># list all second-generation packages in the Dev Hu</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-57"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">update</span><span class="crayon-h">             </span><span class="crayon-p"># update a second-generation package</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-58"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">     </span><span class="crayon-p"># create a second-generation package version</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-59"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-o">:</span><span class="crayon-v">get</span><span class="crayon-h"> </span><span class="crayon-p"># retrieve a package version creation request</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-60"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h"> </span><span class="crayon-p"># list package version creation requests</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-61"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">get</span><span class="crayon-h">        </span><span class="crayon-p"># retrieve a package version in the Dev Hub org</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-62"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">       </span><span class="crayon-p"># list all package versions in the Dev Hub org</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-63"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">package2</span><span class="crayon-o">:</span><span class="crayon-v">version</span><span class="crayon-o">:</span><span class="crayon-v">update</span><span class="crayon-h">     </span><span class="crayon-p"># update a second-generation package version</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-64"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-t">package</span><span class="crayon-o">:</span><span class="crayon-v">install</span><span class="crayon-h">             </span><span class="crayon-p"># install a package in the target org</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-65"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-t">package</span><span class="crayon-o">:</span><span class="crayon-v">install</span><span class="crayon-o">:</span><span class="crayon-v">get</span><span class="crayon-h">         </span><span class="crayon-p"># retrieve the status of a package installation req</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-66"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-t">package</span><span class="crayon-o">:</span><span class="crayon-v">installed</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">      </span><span class="crayon-p"># list the org’s installed packages</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-67"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-t">package</span><span class="crayon-o">:</span><span class="crayon-v">uninstall</span><span class="crayon-h">           </span><span class="crayon-p"># uninstall a second-generation package from the ta</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-68"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-t">package</span><span class="crayon-o">:</span><span class="crayon-v">uninstall</span><span class="crayon-o">:</span><span class="crayon-v">get</span><span class="crayon-h">       </span><span class="crayon-p"># retrieve status of package uninstall request</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-69"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">project</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">              </span><span class="crayon-p"># create a new SFDX project</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-70"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">project</span><span class="crayon-o">:</span><span class="crayon-v">upgrade</span><span class="crayon-h">             </span><span class="crayon-p"># update project config files to the latest format</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-71"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">schema</span><span class="crayon-o">:</span><span class="crayon-v">sobject</span><span class="crayon-o">:</span><span class="crayon-v">describe</span><span class="crayon-h">     </span><span class="crayon-p"># describe an object</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-72"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">schema</span><span class="crayon-o">:</span><span class="crayon-v">sobject</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">         </span><span class="crayon-p"># list all objects of a specified category</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-73"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">convert</span><span class="crayon-h">              </span><span class="crayon-p"># convert Salesforce DX source into the Metadata AP</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-74"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">open</span><span class="crayon-h">                 </span><span class="crayon-p"># edit a Lightning Page with Lightning App Builder</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-75"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">pull</span><span class="crayon-h">                 </span><span class="crayon-p"># pull source from the scratch org to the project</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-76"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">push</span><span class="crayon-h">                 </span><span class="crayon-p"># push source to an org from the project</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-77"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">status</span><span class="crayon-h">               </span><span class="crayon-p"># list local changes and/or changes in a scratch or</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-78"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">user</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">                 </span><span class="crayon-p"># create a user for a scratch org</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-79"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">user</span><span class="crayon-o">:</span><span class="crayon-v">display</span><span class="crayon-h">                </span><span class="crayon-p"># displays information about a user of a scratch or</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-80"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">user</span><span class="crayon-o">:</span><span class="crayon-v">list</span><span class="crayon-h">                   </span><span class="crayon-p"># lists all users of a scratch org</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-81"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">user</span><span class="crayon-o">:</span><span class="crayon-v">password</span><span class="crayon-o">:</span><span class="crayon-v">generate</span><span class="crayon-h">      </span><span class="crayon-p"># generate a password for scratch org users</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-82"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">user</span><span class="crayon-o">:</span><span class="crayon-v">permset</span><span class="crayon-o">:</span><span class="crayon-v">assign</span><span class="crayon-h">         </span><span class="crayon-p"># assign a permission set to one or more users of a</span></div><div class="crayon-line" id="crayon-5cea2410778a2718269206-83"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">visualforce</span><span class="crayon-o">:</span><span class="crayon-v">component</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h"> </span><span class="crayon-p"># create a Visualforce component</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2410778a2718269206-84"><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">visualforce</span><span class="crayon-o">:</span><span class="crayon-v">page</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h">     </span><span class="crayon-p"># create a Visualforce page</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0874 seconds] -->
+<p>Happy learning
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+</p><div class="quads-location quads-ad5" id="quads-ad5" style="">
+
+</div>
+
+<p>Like us for more updates<br>
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener" data-ft='{"tn":"-U"}'>Forcelearn.com</a><br>
+keep visiting us for more updates and feel free share to help others
+No tags for this post.</p>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="../../category/uncategorized/blog/index.html" rel="category tag">Blog</a>	</div>
+
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>ForceLearn</h2>
+		<p>
+			<a href="https://wordpress.org/">
+				Powered by WordPress			</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+
+<!-- Mirrored from www.forcelearn.com/list-salesforce-dx-commands/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:31:05 GMT -->
+</html>

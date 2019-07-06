@@ -1,0 +1,659 @@
+<!doctype html>
+<html amp lang="en-US">
+
+<!-- Mirrored from www.forcelearn.com/display-list-accounts-delete-button-lightning-component/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:30:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	    <script async custom-element="amp-ad" src="../../../cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    	<title>Display List of Accounts with delete button on Lightning Component | ForceLearn</title>
+		<link rel="canonical" href="../index.html" />
+	<script type='text/javascript' src='../../../cdn.ampproject.org/v0.js' async></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"ForceLearn","logo":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2017\/11\/cropped-4416041-designstyle-boots-l-32x32.png","width":32,"height":32}},"@type":"BlogPosting","mainEntityOfPage":"https:\/\/www.forcelearn.com\/display-list-accounts-delete-button-lightning-component\/","headline":"Display List of Accounts with delete button on Lightning Component","datePublished":"2017-11-04T11:47:28+00:00","dateModified":"2017-11-04T12:10:08+00:00","author":{"@type":"Person","name":"forcelearn"},"image":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2017\/11\/Display-list-of-accounts-with-delete-in-lightning-compoenent.png","width":1280,"height":720}}</script>
+	<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 770px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( ../../wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{margin-top:12px;margin-bottom:12px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-fbb711c{font-size:12px;height:18px;line-height:18px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-6986ee0{min-height:16.8px;line-height:16.8px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-c86a462{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{font-size:12px;line-height:15px}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.html">
+										<amp-img src="../../wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png" width="32" height="32" class="amp-wp-site-icon"></amp-img>
+						<span class="amp-site-title">
+				ForceLearn			</span>
+		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Display List of Accounts with delete button on Lightning Component</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/bbfb2fb66335c9c0bad976a3a88dda85?s=24&amp;r=g" alt="forcelearn" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">forcelearn</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2017-11-04T11:47:28+00:00">
+		2 years ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="770" height="433" src="../../wp-content/uploads/2017/11/Display-list-of-accounts-with-delete-in-lightning-compoenent-1024x576.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/Display-list-of-accounts-with-delete-in-lightning-compoenent-1024x576.png 1024w, https://www.forcelearn.com/wp-content/uploads/2017/11/Display-list-of-accounts-with-delete-in-lightning-compoenent-300x169.png 300w, https://www.forcelearn.com/wp-content/uploads/2017/11/Display-list-of-accounts-with-delete-in-lightning-compoenent-768x432.png 768w, https://www.forcelearn.com/wp-content/uploads/2017/11/Display-list-of-accounts-with-delete-in-lightning-compoenent.png 1280w" sizes="(max-width: 770px) 100vw, 770px" layout="intrinsic"></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad4" id="quads-ad4" style="">
+
+</div>
+<p class="dpsp-share-text">Sharing is caring!</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad10" id="quads-ad10" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad3" id="quads-ad3" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="">
+
+</div>
+<div id="dpsp-content-top" class="dpsp-content-wrapper dpsp-shape-circle dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content "><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.forcelearn.com%2Fdisplay-list-accounts-delete-button-lightning-component%2F&amp;t=Display+List+of+Accounts+with+delete+button+on+Lightning+Component" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Display+List+of+Accounts+with+delete+button+on+Lightning+Component&amp;url=https%3A%2F%2Fwww.forcelearn.com%2Fdisplay-list-accounts-delete-button-lightning-component%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.forcelearn.com%2Fdisplay-list-accounts-delete-button-lightning-component%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="#" class="dpsp-network-btn dpsp-pinterest"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Pinterest</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.forcelearn.com%2Fdisplay-list-accounts-delete-button-lightning-component%2F&amp;title=Display+List+of+Accounts+with+delete+button+on+Lightning+Component&amp;mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div><p>Today Iam here to explain how to display list of accounts with delete button on Lightning component</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad5" id="quads-ad5" style="">
+
+</div>
+
+<p>Business case :  User need to show list of accounts and with delete button on display their page</p>
+<p>Solution : we helped by designing lightning component</p>
+<p>Step1 : Create a controller class<br>
+Path setup- UserMenu – Developer Console -File-New Apex Class</p>
+<p>AccountsController</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2323ae079547960468" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+public class AccController {
+ @AuraEnabled
+ public static List getAccounts() {
+ return [SELECT Id, name, industry, Type, NumberOfEmployees, TickerSymbol, Phone FROM Account ORDER BY createdDate ASC];
+ }
+}</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2323ae079547960468-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae079547960468-2">2</div><div class="crayon-num" data-line="crayon-5cea2323ae079547960468-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae079547960468-4">4</div><div class="crayon-num" data-line="crayon-5cea2323ae079547960468-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae079547960468-6">6</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2323ae079547960468-1"><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">AccController</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae079547960468-2"><span class="crayon-h"> </span><span class="crayon-sy">@</span><span class="crayon-e">AuraEnabled</span></div><div class="crayon-line" id="crayon-5cea2323ae079547960468-3"><span class="crayon-e"> </span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-m">static</span><span class="crayon-h"> </span><span class="crayon-e">List </span><span class="crayon-e">getAccounts</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae079547960468-4"><span class="crayon-h"> </span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-sy">[</span><span class="crayon-e">SELECT </span><span class="crayon-v">Id</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">name</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">industry</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">Type</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">NumberOfEmployees</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">TickerSymbol</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">Phone </span><span class="crayon-e">FROM </span><span class="crayon-e">Account </span><span class="crayon-e">ORDER </span><span class="crayon-e">BY </span><span class="crayon-e">createdDate </span><span class="crayon-v">ASC</span><span class="crayon-sy">]</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cea2323ae079547960468-5"><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae079547960468-6"><span class="crayon-sy">}</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0234 seconds] -->
+<p>Step2 : Create a lightning Component<br>
+Path setup- UserMenu – Developer Console -File-New Lightning Component</p>
+<p>Account List Component</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2323ae09b785496810" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+&lt;aura:component controller="AccController"&gt;
+  &lt;aura:attribute name="accounts" type="List" /&gt;
+  &lt;aura:handler name="init" value="{!this}" action="{!c.doInit}" /&gt;
+  &lt;!--
+    Use a data table from the Lightning Design System:
+    https://www.lightningdesignsystem.com/components/data-tables/
+  --&gt;
+  &lt;table class="slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer slds-table--fixed-layout"&gt;
+    &lt;thead&gt;
+      &lt;tr class="slds-text-heading--label"&gt;
+        &lt;th scope="col"&gt;&lt;div class="slds-truncate" title="ID"&gt;ID&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;div class="slds-truncate" title="Name"&gt;Name&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;div class="slds-truncate" title="Type"&gt;Type&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;div class="slds-truncate" title="Number Of Employees"&gt;Number Of Employees&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;div class="slds-truncate" title="Ticker Symbol"&gt;Ticker Symbol&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;div class="slds-truncate" title="Phone"&gt;Phone&lt;/div&gt;&lt;/th&gt;
+        &lt;th scope="col"&gt;&lt;div class="slds-truncate" title="Delete"&gt;Delete&lt;/div&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;!-- Use the Apex model and controller to fetch server side data --&gt;
+      &lt;aura:iteration items="{!v.accounts}" var="account"&gt;
+        &lt;tr&gt;
+          &lt;th scope="row"&gt;&lt;div class="slds-truncate" title="{!account.Id}"&gt;{!account.Id}&lt;/div&gt;&lt;/th&gt;
+          &lt;td&gt;&lt;div class="slds-truncate" title="{!account.Name}"&gt;{!account.Name}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;div class="slds-truncate" title="{!account.Type}"&gt;{!account.Type}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;div class="slds-truncate" title="{!account.NumberOfEmployees}"&gt;{!account.NumberOfEmployees}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;div class="slds-truncate" title="{!account.TickerSymbol}"&gt;{!account.TickerSymbol}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;div class="slds-truncate" title="{!account.Phone}"&gt;{!account.Phone}&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;
+            &lt;form class="account-form" onsubmit="{!c.deleteAccount}"&gt;
+              &lt;input type="hidden" value="{!account.Name}" class="account-name" /&gt;
+              &lt;!--
+                Use a Lightning Base Component
+                To display an icon next to the label
+               --&gt;
+              &lt;lightning:button label="Delete"
+                                iconName="utility:delete"
+                                iconPosition="left"
+                                variant="destructive"
+                                /&gt;
+            &lt;/form&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/aura:iteration&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/aura:component&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-2">2</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-4">4</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-6">6</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-8">8</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-10">10</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-12">12</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-14">14</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-15">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-16">16</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-17">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-18">18</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-19">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-20">20</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-21">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-22">22</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-23">23</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-24">24</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-25">25</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-26">26</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-27">27</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-28">28</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-29">29</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-30">30</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-31">31</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-32">32</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-33">33</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-34">34</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-35">35</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-36">36</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-37">37</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-38">38</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-39">39</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-40">40</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-41">41</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-42">42</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-43">43</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-44">44</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-45">45</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-46">46</div><div class="crayon-num" data-line="crayon-5cea2323ae09b785496810-47">47</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae09b785496810-48">48</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2323ae09b785496810-1"><span class="crayon-o">&lt;</span><span class="crayon-v">aura</span><span class="crayon-o">:</span><span class="crayon-e">component </span><span class="crayon-v">controller</span><span class="crayon-o">=</span><span class="crayon-s">"AccController"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-2"><span class="crayon-h">  </span><span class="crayon-o">&lt;</span><span class="crayon-v">aura</span><span class="crayon-o">:</span><span class="crayon-e">attribute </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"accounts"</span><span class="crayon-h"> </span><span class="crayon-v">type</span><span class="crayon-o">=</span><span class="crayon-s">"List"</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-3"><span class="crayon-h">  </span><span class="crayon-o">&lt;</span><span class="crayon-v">aura</span><span class="crayon-o">:</span><span class="crayon-e">handler </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"init"</span><span class="crayon-h"> </span><span class="crayon-v">value</span><span class="crayon-o">=</span><span class="crayon-s">"{!this}"</span><span class="crayon-h"> </span><span class="crayon-v">action</span><span class="crayon-o">=</span><span class="crayon-s">"{!c.doInit}"</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-4"><span class="crayon-h">  </span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-5"><span class="crayon-h">    </span><span class="crayon-st">Use</span><span class="crayon-h"> </span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-e">data </span><span class="crayon-e">table </span><span class="crayon-e">from </span><span class="crayon-e">the </span><span class="crayon-e">Lightning </span><span class="crayon-e">Design </span><span class="crayon-v">System</span><span class="crayon-o">:</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-6"><span class="crayon-h">    </span><span class="crayon-v">https</span><span class="crayon-o">:</span><span class="crayon-c">//www.lightningdesignsystem.com/components/data-tables/</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-7"><span class="crayon-h">  </span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-8"><span class="crayon-h">  </span><span class="crayon-o">&lt;</span><span class="crayon-e">table </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-table slds-table--bordered slds-table--striped slds-table--cell-buffer slds-table--fixed-layout"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-9"><span class="crayon-h">    </span><span class="crayon-o">&lt;</span><span class="crayon-v">thead</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-10"><span class="crayon-h">      </span><span class="crayon-o">&lt;</span><span class="crayon-e">tr </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-text-heading--label"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-11"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-e">th </span><span class="crayon-v">scope</span><span class="crayon-o">=</span><span class="crayon-s">"col"</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"ID"</span><span class="crayon-o">&gt;</span><span class="crayon-v">ID</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">th</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-12"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-e">th </span><span class="crayon-v">scope</span><span class="crayon-o">=</span><span class="crayon-s">"col"</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"Name"</span><span class="crayon-o">&gt;</span><span class="crayon-v">Name</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">th</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-13"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-e">th </span><span class="crayon-v">scope</span><span class="crayon-o">=</span><span class="crayon-s">"col"</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"Type"</span><span class="crayon-o">&gt;</span><span class="crayon-v">Type</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">th</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-14"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-e">th </span><span class="crayon-v">scope</span><span class="crayon-o">=</span><span class="crayon-s">"col"</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"Number Of Employees"</span><span class="crayon-o">&gt;</span><span class="crayon-e">Number </span><span class="crayon-e">Of </span><span class="crayon-v">Employees</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">th</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-15"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-e">th </span><span class="crayon-v">scope</span><span class="crayon-o">=</span><span class="crayon-s">"col"</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"Ticker Symbol"</span><span class="crayon-o">&gt;</span><span class="crayon-e">Ticker </span><span class="crayon-v">Symbol</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">th</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-16"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-e">th </span><span class="crayon-v">scope</span><span class="crayon-o">=</span><span class="crayon-s">"col"</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"Phone"</span><span class="crayon-o">&gt;</span><span class="crayon-v">Phone</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">th</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-17"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-e">th </span><span class="crayon-v">scope</span><span class="crayon-o">=</span><span class="crayon-s">"col"</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"Delete"</span><span class="crayon-o">&gt;</span><span class="crayon-v">Delete</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">th</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-18"><span class="crayon-h">      </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">tr</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-19"><span class="crayon-h">    </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">thead</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-20"><span class="crayon-h">    </span><span class="crayon-o">&lt;</span><span class="crayon-v">tbody</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-21"><span class="crayon-h">      </span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-st">Use</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-e">Apex </span><span class="crayon-e">model </span><span class="crayon-st">and</span><span class="crayon-h"> </span><span class="crayon-e">controller </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-e">fetch </span><span class="crayon-e">server </span><span class="crayon-e">side </span><span class="crayon-v">data</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-22"><span class="crayon-h">      </span><span class="crayon-o">&lt;</span><span class="crayon-v">aura</span><span class="crayon-o">:</span><span class="crayon-e">iteration </span><span class="crayon-v">items</span><span class="crayon-o">=</span><span class="crayon-s">"{!v.accounts}"</span><span class="crayon-h"> </span><span class="crayon-t">var</span><span class="crayon-o">=</span><span class="crayon-s">"account"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-23"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-v">tr</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-24"><span class="crayon-h">          </span><span class="crayon-o">&lt;</span><span class="crayon-e">th </span><span class="crayon-v">scope</span><span class="crayon-o">=</span><span class="crayon-s">"row"</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"{!account.Id}"</span><span class="crayon-o">&gt;</span><span class="crayon-sy">{</span><span class="crayon-o">!</span><span class="crayon-v">account</span><span class="crayon-sy">.</span><span class="crayon-v">Id</span><span class="crayon-sy">}</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">th</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-25"><span class="crayon-h">          </span><span class="crayon-o">&lt;</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"{!account.Name}"</span><span class="crayon-o">&gt;</span><span class="crayon-sy">{</span><span class="crayon-o">!</span><span class="crayon-v">account</span><span class="crayon-sy">.</span><span class="crayon-v">Name</span><span class="crayon-sy">}</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-26"><span class="crayon-h">          </span><span class="crayon-o">&lt;</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"{!account.Type}"</span><span class="crayon-o">&gt;</span><span class="crayon-sy">{</span><span class="crayon-o">!</span><span class="crayon-v">account</span><span class="crayon-sy">.</span><span class="crayon-v">Type</span><span class="crayon-sy">}</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-27"><span class="crayon-h">          </span><span class="crayon-o">&lt;</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"{!account.NumberOfEmployees}"</span><span class="crayon-o">&gt;</span><span class="crayon-sy">{</span><span class="crayon-o">!</span><span class="crayon-v">account</span><span class="crayon-sy">.</span><span class="crayon-v">NumberOfEmployees</span><span class="crayon-sy">}</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-28"><span class="crayon-h">          </span><span class="crayon-o">&lt;</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"{!account.TickerSymbol}"</span><span class="crayon-o">&gt;</span><span class="crayon-sy">{</span><span class="crayon-o">!</span><span class="crayon-v">account</span><span class="crayon-sy">.</span><span class="crayon-v">TickerSymbol</span><span class="crayon-sy">}</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-29"><span class="crayon-h">          </span><span class="crayon-o">&lt;</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"slds-truncate"</span><span class="crayon-h"> </span><span class="crayon-v">title</span><span class="crayon-o">=</span><span class="crayon-s">"{!account.Phone}"</span><span class="crayon-o">&gt;</span><span class="crayon-sy">{</span><span class="crayon-o">!</span><span class="crayon-v">account</span><span class="crayon-sy">.</span><span class="crayon-v">Phone</span><span class="crayon-sy">}</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-30"><span class="crayon-h">          </span><span class="crayon-o">&lt;</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-31"><span class="crayon-h">            </span><span class="crayon-o">&lt;</span><span class="crayon-e">form </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"account-form"</span><span class="crayon-h"> </span><span class="crayon-v">onsubmit</span><span class="crayon-o">=</span><span class="crayon-s">"{!c.deleteAccount}"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-32"><span class="crayon-h">              </span><span class="crayon-o">&lt;</span><span class="crayon-e">input </span><span class="crayon-v">type</span><span class="crayon-o">=</span><span class="crayon-s">"hidden"</span><span class="crayon-h"> </span><span class="crayon-v">value</span><span class="crayon-o">=</span><span class="crayon-s">"{!account.Name}"</span><span class="crayon-h"> </span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"account-name"</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-33"><span class="crayon-h">              </span><span class="crayon-o">&lt;</span><span class="crayon-o">!</span><span class="crayon-o">--</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-34"><span class="crayon-h">                </span><span class="crayon-st">Use</span><span class="crayon-h"> </span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-e">Lightning </span><span class="crayon-e">Base </span><span class="crayon-e">Component</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-35"><span class="crayon-e">                </span><span class="crayon-st">To</span><span class="crayon-h"> </span><span class="crayon-e">display </span><span class="crayon-e">an </span><span class="crayon-e">icon </span><span class="crayon-e">next </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-v">label</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-36"><span class="crayon-h">               </span><span class="crayon-o">--</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-37"><span class="crayon-h">              </span><span class="crayon-o">&lt;</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-e">button </span><span class="crayon-v">label</span><span class="crayon-o">=</span><span class="crayon-s">"Delete"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-38"><span class="crayon-h">                                </span><span class="crayon-v">iconName</span><span class="crayon-o">=</span><span class="crayon-s">"utility:delete"</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-39"><span class="crayon-h">                                </span><span class="crayon-v">iconPosition</span><span class="crayon-o">=</span><span class="crayon-s">"left"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-40"><span class="crayon-h">                                </span><span class="crayon-v">variant</span><span class="crayon-o">=</span><span class="crayon-s">"destructive"</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-41"><span class="crayon-h">                                </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-42"><span class="crayon-h">            </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">form</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-43"><span class="crayon-h">          </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">td</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-44"><span class="crayon-h">        </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">tr</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-45"><span class="crayon-h">      </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">aura</span><span class="crayon-o">:</span><span class="crayon-v">iteration</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-46"><span class="crayon-h">    </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">tbody</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae09b785496810-47"><span class="crayon-h">  </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">table</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae09b785496810-48"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">aura</span><span class="crayon-o">:</span><span class="crayon-v">component</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0713 seconds] -->
+<p>Step3 : Create Controller for lightning Component<br>
+ Path : Click on controller left side of our lightning component or with shortcut ctrl+shift+2</p>
+<p>Account List Controller</p>
+<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2323ae0b4666999509" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+({
+  doInit: function(component, event, helper) {      
+    // Fetch the account list from the Apex controller   
+    helper.getAccountList(component);
+  },
+  deleteAccount: function(component, event, helper) {
+    // Prevent the form from getting submitted
+    event.preventDefault();
+
+    // Get the value from the field that's in the form
+    var accountName = event.target.getElementsByClassName('account-name')[0].value;
+    confirm('Delete the ' + accountName + ' account? (don’t worry, this won’t actually work!)');
+  }
+})</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2323ae0b4666999509-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0b4666999509-2">2</div><div class="crayon-num" data-line="crayon-5cea2323ae0b4666999509-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0b4666999509-4">4</div><div class="crayon-num" data-line="crayon-5cea2323ae0b4666999509-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0b4666999509-6">6</div><div class="crayon-num" data-line="crayon-5cea2323ae0b4666999509-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0b4666999509-8">8</div><div class="crayon-num" data-line="crayon-5cea2323ae0b4666999509-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0b4666999509-10">10</div><div class="crayon-num" data-line="crayon-5cea2323ae0b4666999509-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0b4666999509-12">12</div><div class="crayon-num" data-line="crayon-5cea2323ae0b4666999509-13">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0b4666999509-14">14</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2323ae0b4666999509-1"><span class="crayon-sy">(</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0b4666999509-2"><span class="crayon-h">  </span><span class="crayon-v">doInit</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-v">component</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">helper</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h">      </span></div><div class="crayon-line" id="crayon-5cea2323ae0b4666999509-3"><span class="crayon-h">    </span><span class="crayon-c">// Fetch the account list from the Apex controller   </span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0b4666999509-4"><span class="crayon-h">    </span><span class="crayon-v">helper</span><span class="crayon-sy">.</span><span class="crayon-e">getAccountList</span><span class="crayon-sy">(</span><span class="crayon-v">component</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cea2323ae0b4666999509-5"><span class="crayon-h">  </span><span class="crayon-sy">}</span><span class="crayon-sy">,</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0b4666999509-6"><span class="crayon-h">  </span><span class="crayon-v">deleteAccount</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-v">component</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">helper</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5cea2323ae0b4666999509-7"><span class="crayon-h">    </span><span class="crayon-c">// Prevent the form from getting submitted</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0b4666999509-8"><span class="crayon-h">    </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-e">preventDefault</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cea2323ae0b4666999509-9"> </div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0b4666999509-10"><span class="crayon-h">    </span><span class="crayon-c">// Get the value from the field that's in the form</span></div><div class="crayon-line" id="crayon-5cea2323ae0b4666999509-11"><span class="crayon-h">    </span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">accountName</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-sy">.</span><span class="crayon-v">target</span><span class="crayon-sy">.</span><span class="crayon-e">getElementsByClassName</span><span class="crayon-sy">(</span><span class="crayon-s">'account-name'</span><span class="crayon-sy">)</span><span class="crayon-sy">[</span><span class="crayon-cn">0</span><span class="crayon-sy">]</span><span class="crayon-sy">.</span><span class="crayon-v">value</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0b4666999509-12"><span class="crayon-h">    </span><span class="crayon-e">confirm</span><span class="crayon-sy">(</span><span class="crayon-s">'Delete the '</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">accountName</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-s">' account? (don’t worry, this won’t actually work!)'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cea2323ae0b4666999509-13"><span class="crayon-h">  </span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0b4666999509-14"><span class="crayon-sy">}</span><span class="crayon-sy">)</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0218 seconds] -->
+<p> </p>
+<p>Step4 : Create helper for lightning Component<br>
+Path : Click on helper left side of our lightning component or with shortcut ctrl+shift+3</p>
+<p>Account List Helper</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2323ae0c9193523972" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+({
+// Fetch the accounts from the Apex controller
+getAccountList: function(component) {
+var action = component.get('c.getAccounts');
+
+// Set up the callback
+var self = this;
+action.setCallback(this, function(actionResult) {
+component.set('v.accounts', actionResult.getReturnValue());
+});
+$A.enqueueAction(action);
+}
+})</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2323ae0c9193523972-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0c9193523972-2">2</div><div class="crayon-num" data-line="crayon-5cea2323ae0c9193523972-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0c9193523972-4">4</div><div class="crayon-num" data-line="crayon-5cea2323ae0c9193523972-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0c9193523972-6">6</div><div class="crayon-num" data-line="crayon-5cea2323ae0c9193523972-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0c9193523972-8">8</div><div class="crayon-num" data-line="crayon-5cea2323ae0c9193523972-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0c9193523972-10">10</div><div class="crayon-num" data-line="crayon-5cea2323ae0c9193523972-11">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0c9193523972-12">12</div><div class="crayon-num" data-line="crayon-5cea2323ae0c9193523972-13">13</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2323ae0c9193523972-1"><span class="crayon-sy">(</span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0c9193523972-2"><span class="crayon-c">// Fetch the accounts from the Apex controller</span></div><div class="crayon-line" id="crayon-5cea2323ae0c9193523972-3"><span class="crayon-v">getAccountList</span><span class="crayon-o">:</span><span class="crayon-h"> </span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-v">component</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0c9193523972-4"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">action</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">component</span><span class="crayon-sy">.</span><span class="crayon-e">get</span><span class="crayon-sy">(</span><span class="crayon-s">'c.getAccounts'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cea2323ae0c9193523972-5"> </div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0c9193523972-6"><span class="crayon-c">// Set up the callback</span></div><div class="crayon-line" id="crayon-5cea2323ae0c9193523972-7"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-r">self</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">this</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0c9193523972-8"><span class="crayon-v">action</span><span class="crayon-sy">.</span><span class="crayon-e">setCallback</span><span class="crayon-sy">(</span><span class="crayon-r">this</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-v">actionResult</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5cea2323ae0c9193523972-9"><span class="crayon-v">component</span><span class="crayon-sy">.</span><span class="crayon-e">set</span><span class="crayon-sy">(</span><span class="crayon-s">'v.accounts'</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">actionResult</span><span class="crayon-sy">.</span><span class="crayon-e">getReturnValue</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0c9193523972-10"><span class="crayon-sy">}</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5cea2323ae0c9193523972-11"><span class="crayon-sy">$</span><span class="crayon-v">A</span><span class="crayon-sy">.</span><span class="crayon-e">enqueueAction</span><span class="crayon-sy">(</span><span class="crayon-v">action</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0c9193523972-12"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5cea2323ae0c9193523972-13"><span class="crayon-sy">}</span><span class="crayon-sy">)</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0010 seconds] -->
+<p> </p>
+<p>Step5 : Create lightning Component application<br>
+Path : setup- UserMenu – Developer Console -File-New Lightning Application</p>
+<p>Account List Application</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2323ae0dd008787306" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+&lt;aura:application extends="force:slds"&gt;
+  &lt;c:AccountList /&gt;
+&lt;/aura:application&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2323ae0dd008787306-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2323ae0dd008787306-2">2</div><div class="crayon-num" data-line="crayon-5cea2323ae0dd008787306-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2323ae0dd008787306-1"><span class="crayon-o">&lt;</span><span class="crayon-v">aura</span><span class="crayon-o">:</span><span class="crayon-e">application </span><span class="crayon-r">extends</span><span class="crayon-o">=</span><span class="crayon-s">"force:slds"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2323ae0dd008787306-2"><span class="crayon-h">  </span><span class="crayon-o">&lt;</span><span class="crayon-v">c</span><span class="crayon-o">:</span><span class="crayon-v">AccountList</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-5cea2323ae0dd008787306-3"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">aura</span><span class="crayon-o">:</span><span class="crayon-v">application</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p> </p>
+<p>Hola !! , we have seen list of accounts with delete button</p>
+<p>If you find intersting please share it to others and subscribe us 🙂
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+</p><div class="quads-location quads-ad2" id="quads-ad2" style="">
+
+</div>
+
+<p>Keep watching us for more updates
+No tags for this post.</p>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="../../category/code/index.html" rel="category tag">Code</a>	</div>
+
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="../index.html#comments">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>ForceLearn</h2>
+		<p>
+			<a href="https://wordpress.org/">
+				Powered by WordPress			</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+
+<!-- Mirrored from www.forcelearn.com/display-list-accounts-delete-button-lightning-component/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:30:32 GMT -->
+</html>

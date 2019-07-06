@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>component &#8211; ForceLearn</title>
+	<atom:link href="https://www.forcelearn.com/tag/component/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.forcelearn.com</link>
+	<description>Learn Salesforce Developement tip and tricks</description>
+	<lastBuildDate>Sun, 28 Apr 2019 20:18:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+
+<image>
+	<url>https://www.forcelearn.com/wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png</url>
+	<title>component &#8211; ForceLearn</title>
+	<link>https://www.forcelearn.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Lightning Bundle in Salesforce Lightning</title>
+		<link>https://www.forcelearn.com/lightning-bundle-salesforce-lightning/</link>
+		<comments>https://www.forcelearn.com/lightning-bundle-salesforce-lightning/#respond</comments>
+		<pubDate>Mon, 22 Jan 2018 16:36:26 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[component]]></category>
+		<category><![CDATA[Lightning]]></category>
+		<category><![CDATA[salesforce lightning]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=431</guid>
+		<description><![CDATA[<p>What is Lightning Component Bundle ? Lightning Bundle contains Component,Controller,Helper,style,documentation,rerender,design,SVG with it. Application While we creating lightning application its created automatically with standard application. Lightning application store only html tags. The only required resource in a bundle. Contains markup for the component or app. Each bundle contains only one component or app resource. ForceLearn.app Component [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/lightning-bundle-salesforce-lightning/">Lightning Bundle in Salesforce Lightning</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h1>What is Lightning Component Bundle ?</h1>
+<p>Lightning Bundle contains Component,Controller,Helper,style,documentation,rerender,design,SVG with it.</p>
+<p><img class="size-full wp-image-432 aligncenter" src="http://www.forcelearn.com/wp-content/uploads/2018/01/Lightning-Bundle-in-salesforce.png" alt="" width="264" height="263" srcset="https://www.forcelearn.com/wp-content/uploads/2018/01/Lightning-Bundle-in-salesforce.png 264w, https://www.forcelearn.com/wp-content/uploads/2018/01/Lightning-Bundle-in-salesforce-150x150.png 150w" sizes="(max-width: 264px) 100vw, 264px" /></p>
+<h3>Application</h3>
+<p>While we creating lightning application its created automatically with standard application. Lightning application store only html tags.<br />
+The only required resource in a bundle. Contains markup for the component or app. Each bundle contains only one component or app resource.</p>
+<p>ForceLearn.app<br />
+<script src="https://gist.github.com/forcelearn/a26fb6d110a3cac1f7c25932b74b028a.js"></script></p>
+<h3>Component</h3>
+<p>Lightning component are mostly used used html tags and we can use markup and HTML5 are also supported.</p>
+<p>ForceLearn.cmp</p>
+<p><script src="https://gist.github.com/forcelearn/6183b0feb05b89a3bfa609d12e7278de.js"></script></p>
+<h3>Controller</h3>
+<p>It Contains client-side controller methods to handle events in the component. It&#8217;s supports javascript to run functions in components actions and each function has three parameters like component,event and helper.</p>
+<p>ForceLearnController.js</p><pre class="crayon-plain-tag">( 
+ {
+ myAction : function(component, event, helper) { 
+  }
+ }
+)</pre><p></p>
+<h3>Helper</h3>
+<p>JavaScript functions that can be called from any JavaScript code in a component’s bundle.</p>
+<p>ForceLearnHelper.js</p><pre class="crayon-plain-tag">(
+  {
+ helperMethod : function() {
+   }
+ } 
+)</pre><p></p>
+<h3>CSS</h3>
+<p>Contains styles for the component.we can customize application with CSS with custom CSS.</p>
+<p>ForceLearn.css</p><pre class="crayon-plain-tag">.THIS {
+}</pre><p></p>
+<h3>Documentation</h3>
+<p>In Documentation, we can design the description, sample code, and one or multiple references to example components.</p>
+<p>ForceLearn.auradoc<br />
+<script src="https://gist.github.com/forcelearn/539ce74eba417b353267ed996c6e1bdd.js"></script></p>
+<h3>Render</h3>
+<p>Client-side renderer to override default rendering for a component.</p>
+<p>ForceLearnRender.js</p><pre class="crayon-plain-tag">(
+  {
+ // Your renderer method overrides go here
+  }
+)</pre><p></p>
+<h3>SVG</h3>
+<p>By using SVG, we can Custom icon resource for components used in the Lightning App Builder or Community Builder.</p>
+<p>ForceLearn.svg<br />
+<script src="https://gist.github.com/forcelearn/bdcd321048cdcb5bb308ed7e78cb3594.js"></script></p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br />
+keep share to help others  <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/component/" title="component" rel="tag">component</a>, <a href="https://www.forcelearn.com/tag/lightning/" title="Lightning" rel="tag">Lightning</a>, <a href="https://www.forcelearn.com/tag/salesforce-lightning/" title="salesforce lightning" rel="tag">salesforce lightning</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/lightning-bundle-salesforce-lightning/">Lightning Bundle in Salesforce Lightning</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/lightning-bundle-salesforce-lightning/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

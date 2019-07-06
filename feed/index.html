@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ForceLearn</title>
+	<atom:link href="https://www.forcelearn.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.forcelearn.com</link>
+	<description>Learn Salesforce Developement tip and tricks</description>
+	<lastBuildDate>Sun, 28 Apr 2019 20:18:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+
+<image>
+	<url>https://www.forcelearn.com/wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png</url>
+	<title>ForceLearn</title>
+	<link>https://www.forcelearn.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Play with LWC recipes from Sample Gallery Learn LWC (Lightning Web Components)</title>
+		<link>https://www.forcelearn.com/play-with-lwc-recipes-from-sample-gallery-learn-lwc-lightning-web-components/</link>
+		<comments>https://www.forcelearn.com/play-with-lwc-recipes-from-sample-gallery-learn-lwc-lightning-web-components/#respond</comments>
+		<pubDate>Sun, 28 Apr 2019 20:13:32 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Lightning Web Components]]></category>
+		<category><![CDATA[Introduction to LWC]]></category>
+		<category><![CDATA[Lightning Web Components setup]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=978</guid>
+		<description><![CDATA[<p>Hi Guys, Welcome back, Today we discuss about Sample Gallery and how can we use sample gallery apps into our salesforce orgs Play with LWC recipes from Sample Gallery  Learn LWC To start playing with LWC recipes you need to have some Prerequisites check here open your VS code and Paste below line of code in [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/play-with-lwc-recipes-from-sample-gallery-learn-lwc-lightning-web-components/">Play with LWC recipes from Sample Gallery Learn LWC (Lightning Web Components)</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Hi Guys,</p>
+<p>Welcome back, Today we discuss about Sample Gallery and how can we use <a href="https://trailhead.salesforce.com/sample-gallery" target="_blank" rel="noopener">sample gallery</a> apps into our salesforce orgs</p>
+<h1>Play with LWC recipes from Sample Gallery  Learn LWC</h1>
+<p>To start playing with LWC recipes you need to have some Prerequisites <a href="https://www.forcelearn.com/introduction-to-lightning-web-components-lwc-by-forcelearn/" target="_blank" rel="noopener">check here</a></p>
+<ul>
+<li>open your VS code and Paste below line of code in terminal get LWC recipes from github repo</li>
+</ul>
+<p></p><pre class="crayon-plain-tag">git clone https://github.com/trailheadapps/lwc-recipes.git</pre><p><img class="wp-image-980 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/1.Download_LWCRecipes_Git_Repo.jpg" alt="" width="454" height="115" srcset="https://www.forcelearn.com/wp-content/uploads/2019/04/1.Download_LWCRecipes_Git_Repo.jpg 581w, https://www.forcelearn.com/wp-content/uploads/2019/04/1.Download_LWCRecipes_Git_Repo-300x76.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2019/04/1.Download_LWCRecipes_Git_Repo-370x94.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2019/04/1.Download_LWCRecipes_Git_Repo-270x68.jpg 270w" sizes="(max-width: 454px) 100vw, 454px" /></p>
+<ul>
+<li>Click on enter it will download all LWC recipes folder in your local machine.</li>
+<li>Click on File &#8211; Open folder &#8211; LWC Recipes and click on select folder</li>
+<li>Navigate into LWC recipes folder with</li>
+</ul>
+<p></p><pre class="crayon-plain-tag">cd lwc-recipes</pre><p><img class="size-full wp-image-981 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/2.Navigate-int-LWC-recipes-folder.jpg" alt="" width="233" height="40" /></p>
+<ul>
+<li>Authorize your dev hub</li>
+</ul>
+<p></p><pre class="crayon-plain-tag">sfdx force:auth:web:login -s -a Lwc-recipes</pre><p><img class="size-full wp-image-982 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/3.Authorizing-dev-hub.jpg" alt="" width="517" height="29" srcset="https://www.forcelearn.com/wp-content/uploads/2019/04/3.Authorizing-dev-hub.jpg 517w, https://www.forcelearn.com/wp-content/uploads/2019/04/3.Authorizing-dev-hub-300x17.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2019/04/3.Authorizing-dev-hub-370x21.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2019/04/3.Authorizing-dev-hub-270x15.jpg 270w" sizes="(max-width: 517px) 100vw, 517px" /></p>
+<ul>
+<li>It will open your default org and login into your salesforce org,Then your authentication has completed successfully .</li>
+</ul>
+<p><img class="size-full wp-image-983 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/4.Success-Authentication-into-org.jpg" alt="" width="682" height="60" srcset="https://www.forcelearn.com/wp-content/uploads/2019/04/4.Success-Authentication-into-org.jpg 682w, https://www.forcelearn.com/wp-content/uploads/2019/04/4.Success-Authentication-into-org-300x26.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2019/04/4.Success-Authentication-into-org-370x33.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2019/04/4.Success-Authentication-into-org-270x24.jpg 270w" sizes="(max-width: 682px) 100vw, 682px" /></p>
+<ul>
+<li>Assign Permission sets to default users</li>
+</ul>
+<p></p><pre class="crayon-plain-tag">sfdx force:user:permset:assign -n recipes</pre><p><img class="size-full wp-image-984 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/5.Assigning-Permission-Set-to-users.jpg" alt="" width="498" height="95" srcset="https://www.forcelearn.com/wp-content/uploads/2019/04/5.Assigning-Permission-Set-to-users.jpg 498w, https://www.forcelearn.com/wp-content/uploads/2019/04/5.Assigning-Permission-Set-to-users-300x57.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2019/04/5.Assigning-Permission-Set-to-users-370x71.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2019/04/5.Assigning-Permission-Set-to-users-270x52.jpg 270w" sizes="(max-width: 498px) 100vw, 498px" /></p>
+<ul>
+<li>Load Sample data into app</li>
+</ul>
+<p></p><pre class="crayon-plain-tag">sfdx force:data:tree:import --plan ./data/data-plan.json</pre><p><img class="size-full wp-image-985 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/6.Adding_Sample_Data.jpg" alt="" width="606" height="96" srcset="https://www.forcelearn.com/wp-content/uploads/2019/04/6.Adding_Sample_Data.jpg 606w, https://www.forcelearn.com/wp-content/uploads/2019/04/6.Adding_Sample_Data-300x48.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2019/04/6.Adding_Sample_Data-370x59.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2019/04/6.Adding_Sample_Data-270x43.jpg 270w" sizes="(max-width: 606px) 100vw, 606px" /></p>
+<ul>
+<li>Expand force-app &#8212; Main and right click and Navigate to SFDX: Deploy to Source org .</li>
+</ul>
+<p><img class="wp-image-986 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/7.Deploy-into-Source-Org.jpg" alt="" width="297" height="386" srcset="https://www.forcelearn.com/wp-content/uploads/2019/04/7.Deploy-into-Source-Org.jpg 409w, https://www.forcelearn.com/wp-content/uploads/2019/04/7.Deploy-into-Source-Org-231x300.jpg 231w, https://www.forcelearn.com/wp-content/uploads/2019/04/7.Deploy-into-Source-Org-370x480.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2019/04/7.Deploy-into-Source-Org-270x351.jpg 270w" sizes="(max-width: 297px) 100vw, 297px" /></p>
+<ul>
+<li>Your deployment is done successfully .</li>
+</ul>
+<p><img class="size-full wp-image-987 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/8.Deployment-done-sucessfulyy.jpg" alt="" width="458" height="84" srcset="https://www.forcelearn.com/wp-content/uploads/2019/04/8.Deployment-done-sucessfulyy.jpg 458w, https://www.forcelearn.com/wp-content/uploads/2019/04/8.Deployment-done-sucessfulyy-300x55.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2019/04/8.Deployment-done-sucessfulyy-370x68.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2019/04/8.Deployment-done-sucessfulyy-270x50.jpg 270w" sizes="(max-width: 458px) 100vw, 458px" /></p>
+<ul>
+<li>Open you salesforce org and Click on App Launcher icon you able to find LWC application and check with it</li>
+</ul>
+<p><img class="wp-image-988 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/9.LWC-Recipes-in-App-Launcher.jpg" alt="" width="325" height="106" srcset="https://www.forcelearn.com/wp-content/uploads/2019/04/9.LWC-Recipes-in-App-Launcher.jpg 392w, https://www.forcelearn.com/wp-content/uploads/2019/04/9.LWC-Recipes-in-App-Launcher-300x98.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2019/04/9.LWC-Recipes-in-App-Launcher-370x121.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2019/04/9.LWC-Recipes-in-App-Launcher-270x88.jpg 270w" sizes="(max-width: 325px) 100vw, 325px" /></p>
+<p>check here for application overview<br />
+<img class="size-full wp-image-989 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2019/04/Play-with-Sample-gallery-Learn-LWC.gif" alt="" width="600" height="318" /></p>
+<p>Hurry !!!! Your LWC recipes is ready to use.</p>
+<p>We have Designed Salesforce QA Application which contains lot of interview questions on Salesforce. provide your Feedback on application.</p>
+<p>Download: <a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank" rel="noopener"><strong>SalesforceQA</strong></a></p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noreferrer noopener">ForceLearn</a><br />
+keep share to help others <img class="emoji" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="&#x1f642;" /> <img class="emoji" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="&#x1f642;" /> <img class="emoji" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="&#x1f642;" /></p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/introduction-to-lwc/" title="Introduction to LWC" rel="tag">Introduction to LWC</a>, <a href="https://www.forcelearn.com/tag/lightning-web-components-setup/" title="Lightning Web Components setup" rel="tag">Lightning Web Components setup</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/play-with-lwc-recipes-from-sample-gallery-learn-lwc-lightning-web-components/">Play with LWC recipes from Sample Gallery Learn LWC (Lightning Web Components)</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/play-with-lwc-recipes-from-sample-gallery-learn-lwc-lightning-web-components/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Introduction to Lightning Web Components (LWC) By ForceLearn</title>
+		<link>https://www.forcelearn.com/introduction-to-lightning-web-components-lwc-by-forcelearn/</link>
+		<comments>https://www.forcelearn.com/introduction-to-lightning-web-components-lwc-by-forcelearn/#respond</comments>
+		<pubDate>Thu, 21 Feb 2019 20:06:01 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Lightning Web Components]]></category>
+		<category><![CDATA[Introduction to LWC]]></category>
+		<category><![CDATA[Lightning Web Components setup]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=937</guid>
+		<description><![CDATA[<p>Hi Guys, Welcome back, we have started with new topics to get intro on Lightning web components and Setup for them. Prerequisites: Click here to download Salesforce CLI and install on your local machine Open CMD And type  sfdx plugins:install salesforcedx@pre-release  Download Vs Code from below link and install VS Code in local machine and open it. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/introduction-to-lightning-web-components-lwc-by-forcelearn/">Introduction to Lightning Web Components (LWC) By ForceLearn</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Hi Guys,</p>
+<p>Welcome back, we have started with new topics to get intro on Lightning web components and Setup for them.</p>
+<h1><strong>Prerequisites</strong>:</h1>
+<ol>
+<li><a href="https://developer.salesforce.com/tools/sfdxcli" target="_blank" rel="noopener">Click here</a> to download Salesforce CLI and install on your local machine</li>
+<li>Open CMD And type <strong> sfdx plugins:install salesforcedx@pre-release </strong></li>
+<li><strong><a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">Download Vs Code </a></strong>from below link and install VS Code in local machine and open it.</li>
+<li>Install Salesforce Extension Pack and salesforce Lightning Web Components from Extensions<img class="aligncenter wp-image-939" src="http://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack.png" alt="" width="673" height="210" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack.png 1072w, https://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-300x93.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-768x239.png 768w, https://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-1024x319.png 1024w, https://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-370x115.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-270x84.png 270w, https://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-740x231.png 740w" sizes="(max-width: 673px) 100vw, 673px" /></li>
+<li>Install Lightning Web Components</li>
+</ol>
+<h2>Developing project in Visual Code</h2>
+<ol>
+<li>   Type Ctrl+Win+P type SFDX So its working prefect.<img class="aligncenter wp-image-940" src="http://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup.png" alt="" width="577" height="173" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup.png 640w, https://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup-300x90.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup-370x111.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup-270x81.png 270w" sizes="(max-width: 577px) 100vw, 577px" /></li>
+<li>Select Create Project with Manifest and type Project Name<img class="aligncenter size-full wp-image-941" src="http://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest.png" alt="" width="616" height="85" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest.png 616w, https://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest-300x41.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest-370x51.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest-270x37.png 270w" sizes="(max-width: 616px) 100vw, 616px" /></li>
+<li>Select where to save project and New project has been created.<img class="aligncenter size-full wp-image-942" src="http://www.forcelearn.com/wp-content/uploads/2019/02/5_Project_Has_Been_Created.png" alt="" width="325" height="411" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/5_Project_Has_Been_Created.png 325w, https://www.forcelearn.com/wp-content/uploads/2019/02/5_Project_Has_Been_Created-237x300.png 237w, https://www.forcelearn.com/wp-content/uploads/2019/02/5_Project_Has_Been_Created-270x341.png 270w" sizes="(max-width: 325px) 100vw, 325px" /></li>
+</ol>
+<h1><strong>Create Lightning Web Component</strong></h1>
+<ol>
+<li>Type Shift+Ctrl+P and type SFDX:Create lightning Web Component <img class="aligncenter size-full wp-image-943" src="http://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component.png" alt="" width="621" height="92" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component.png 621w, https://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component-300x44.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component-370x55.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component-270x40.png 270w" sizes="(max-width: 621px) 100vw, 621px" /></li>
+<li>And store location needs to be save and type name on your web Component<img class="aligncenter size-full wp-image-944" src="http://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC.png" alt="" width="625" height="92" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC.png 625w, https://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC-300x44.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC-370x54.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC-270x40.png 270w" sizes="(max-width: 625px) 100vw, 625px" /></li>
+</ol>
+<p>Lightning Web Component Contains 3 files .They are</p>
+<ol>
+<li>Html</li>
+<li>Javascriptfile</li>
+<li>JavaScriptMetafile</li>
+</ol>
+<p><img class="aligncenter size-full wp-image-945" src="http://www.forcelearn.com/wp-content/uploads/2019/02/8_LWC_Records.png" alt="" width="292" height="454" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/8_LWC_Records.png 292w, https://www.forcelearn.com/wp-content/uploads/2019/02/8_LWC_Records-193x300.png 193w, https://www.forcelearn.com/wp-content/uploads/2019/02/8_LWC_Records-270x420.png 270w" sizes="(max-width: 292px) 100vw, 292px" /></p>
+<p>You need to <strong>authorize</strong> your org to push code</p>
+<p>Type SFDX: Authorize dev hub</p>
+<p><img class="aligncenter size-full wp-image-946" src="http://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub.png" alt="" width="615" height="88" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub.png 615w, https://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub-300x43.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub-370x53.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub-270x39.png 270w" sizes="(max-width: 615px) 100vw, 615px" /></p>
+<p>Default browser will open and login into your org with credentials</p>
+<p><img class="aligncenter wp-image-947" src="http://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org.png" alt="" width="294" height="394" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org.png 423w, https://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org-224x300.png 224w, https://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org-370x496.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org-270x362.png 270w" sizes="(max-width: 294px) 100vw, 294px" /></p>
+<p>You are done with login.</p>
+<p><img class="aligncenter size-full wp-image-948" src="http://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected.png" alt="" width="714" height="139" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected.png 714w, https://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected-300x58.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected-370x72.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected-270x53.png 270w" sizes="(max-width: 714px) 100vw, 714px" /></p>
+<p>Right Click on LWC and Select Deploy to Source Org.</p>
+<p><img class="aligncenter wp-image-949" src="http://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org.png" alt="" width="389" height="359" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org.png 509w, https://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org-300x277.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org-370x342.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org-270x249.png 270w, https://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org-325x300.png 325w" sizes="(max-width: 389px) 100vw, 389px" /></p>
+<p>Deployment of code is done successfully.</p>
+<p><img class="aligncenter size-full wp-image-950" src="http://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done.png" alt="" width="1009" height="291" srcset="https://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done.png 1009w, https://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-300x87.png 300w, https://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-768x221.png 768w, https://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-370x107.png 370w, https://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-270x78.png 270w, https://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-740x213.png 740w" sizes="(max-width: 1009px) 100vw, 1009px" /></p>
+<p>open Command Palliate(Ctrl+shift=P) type SFDX: Open default org</p>
+<p>Navigate to Sales app and Home page</p>
+<p><img class="aligncenter size-full wp-image-951" src="http://www.forcelearn.com/wp-content/uploads/2019/02/14_EditPage.png" alt="" width="247" height="199" /></p>
+<p>Click on Gear icon and edit page and Search for your web component and drag and drop into layout and click on Save.</p>
+<p><img class="aligncenter size-full wp-image-952" src="http://www.forcelearn.com/wp-content/uploads/2019/02/Demo-Of-Lightning-Web-Components.gif" alt="" width="472" height="368" /></p>
+<p>Hurry !!!! you have designed your first Lightning Web Component.</p>
+<p>We have Designed Salesforce QA Application which contains lot of interview questions on Salesforce. provide your Feedback on application.</p>
+<p>Download: <a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank" rel="noopener"><strong>SalesforceQA</strong></a></p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noreferrer noopener">ForceLearn</a><br />
+keep share to help others <img class="emoji" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="&#x1f642;" /> <img class="emoji" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="&#x1f642;" /> <img class="emoji" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="&#x1f642;" /> .</p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/introduction-to-lwc/" title="Introduction to LWC" rel="tag">Introduction to LWC</a>, <a href="https://www.forcelearn.com/tag/lightning-web-components-setup/" title="Lightning Web Components setup" rel="tag">Lightning Web Components setup</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/introduction-to-lightning-web-components-lwc-by-forcelearn/">Introduction to Lightning Web Components (LWC) By ForceLearn</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/introduction-to-lightning-web-components-lwc-by-forcelearn/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Salesforce Simplified Google Chrome Extensions for Salesforce development</title>
+		<link>https://www.forcelearn.com/salesforce-simplified-google-chrome-extenstions/</link>
+		<comments>https://www.forcelearn.com/salesforce-simplified-google-chrome-extenstions/#respond</comments>
+		<pubDate>Sat, 17 Nov 2018 11:37:47 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=917</guid>
+		<description><![CDATA[<p>New way to work on salesforce Motivation: Creativity is not just for artists. It&#8217;s for business people looking for a new way to close a sale; it&#8217;s for engineers trying to solve a problem; it&#8217;s for parents who want their children to see the world in more than one way. Here we got new way [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/salesforce-simplified-google-chrome-extenstions/">Salesforce Simplified Google Chrome Extensions for Salesforce development</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><strong>New way to work on salesforce</strong></p>
+<p>Motivation: Creativity is not just for artists. It&#8217;s for business people looking for a new way to close a sale; it&#8217;s for engineers trying to solve a problem; it&#8217;s for parents who want their children to see the world in more than one way.</p>
+<p>Here we got new way to work on salesforce to complete your daily development work faster, easier, funnier and in brand new way.</p>
+<h1><strong>Salesforce Simplified Google Chrome Extensions for Salesforce development</strong></h1>
+<p><strong>Problem statements</strong></p>
+<p>Let me ask you some question. if you work on agile development or if you deploy your components after some days.</p>
+<ol>
+<li>How do you remember your class/trigger/object/fields/profile names which you have worked on last 10 days?</li>
+<li>How do you make those components handy for your next day?</li>
+<li>What do you do if you want to know your colleague components name?</li>
+<li>How do you see only of your debug logs?</li>
+<li>How do you delete only of your debug logs?</li>
+<li>What do you do, if you want to see debug logs for other user only?</li>
+</ol>
+<p>I will say there is one way to solve all of above problems. I am sure that you are thinking now how is it possible to solve all of those problem from one solution.</p>
+<p><strong>Introduction</strong></p>
+<p>Yeah you are right this is not possible from any out of box functionality of salesforce. As I started my article, there is new way to solve all of these issues. That’s called <strong>Salesforce Simplified </strong><strong>Chrome Extension</strong>.</p>
+<p><a href="https://chrome.google.com/webstore/detail/salesforce-simplified/hjeigbpcblpkaienmpihneipkempijob?hl=en" target="_blank" rel="noopener">Download</a></p>
+<p><strong>Solution</strong></p>
+<p><strong>Let me walk you through from question 1<sup>st </sup>to 6<sup>th</sup> with solution.</strong></p>
+<p>Prerequisite for all of solution is to first install the <a href="https://chrome.google.com/webstore/detail/salesforce-simplified/hjeigbpcblpkaienmpihneipkempijob?hl=en" target="_blank" rel="noopener">Salesforce Simplified</a> chrome extension and you are ready to go, no configuration required.</p>
+<ol>
+<li>Remembering your class/trigger/object/fields/profile names which you have worked on last some days?</li>
+</ol>
+<ul>
+<li>After installation, you will see a red icon on your top left corner in all salesforce page. <img class="size-full wp-image-919 aligncenter" src="http://www.forcelearn.com/wp-content/uploads/2018/11/1_Nav_Bar.png" alt="" width="628" height="332" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/1_Nav_Bar.png 628w, https://www.forcelearn.com/wp-content/uploads/2018/11/1_Nav_Bar-300x159.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/1_Nav_Bar-370x196.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/1_Nav_Bar-270x143.png 270w, https://www.forcelearn.com/wp-content/uploads/2018/11/1_Nav_Bar-570x300.png 570w" sizes="(max-width: 628px) 100vw, 628px" /></li>
+</ul>
+<ul>
+<li>Just hover on icon and some important metadata will be visible<img class="size-full wp-image-920 aligncenter" src="http://www.forcelearn.com/wp-content/uploads/2018/11/2_Nav_Menu.jpg" alt="" width="628" height="332" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/2_Nav_Menu.jpg 628w, https://www.forcelearn.com/wp-content/uploads/2018/11/2_Nav_Menu-300x159.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/2_Nav_Menu-370x196.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/2_Nav_Menu-270x143.jpg 270w, https://www.forcelearn.com/wp-content/uploads/2018/11/2_Nav_Menu-570x300.jpg 570w" sizes="(max-width: 628px) 100vw, 628px" /></li>
+<li>After click on any metadata a cool popup will get displayed.
+<ul>
+<li>Which contains set of useful data for logged in user and common actions
+<ul>
+<li>List of metadata as menu</li>
+<li>Header with list of metadata link</li>
+<li>Search box for all metadata
+<ul>
+<li>Pagination with number of records in dropdown[200, 500, 1000, 2000]</li>
+<li>Search button – This button is like force search. If metadata is not coming after filter.</li>
+</ul>
+</li>
+<li>Useful link related to metadata
+<ul>
+<li>New (New class for class, new trigger for triggers etc.)</li>
+<li>Setup page link</li>
+<li>Developer console link</li>
+</ul>
+</li>
+<li>My metadata view
+<ul>
+<li>List of metadata for selected user
+<ul>
+<li>View action – All Metadata</li>
+<li>Edit action – Class/Trigger/Object/Page/Label/Component etc.</li>
+<li>Download action &#8211; Class</li>
+<li>Security action – Class/Page</li>
+<li>Clone action – Profile</li>
+<li>List of Data</li>
+</ul>
+</li>
+<li>All metadata view
+<ul>
+<li>List of all metadata available in org</li>
+<li>With all above actions</li>
+</ul>
+</li>
+<li>Top ten developer’s analysis
+<ul>
+<li>Top ten developers for all metadata</li>
+<li>Click on any developer name to show all metadata of selected developer.</li>
+</ul>
+</li>
+<li>View as
+<ul>
+<li>View as functionality is a game changer for this application</li>
+<li>If you will click view as button with any name, behavior of this application will get changed.</li>
+<li>Data of my view will get changed for respective selected user.<img class="size-full wp-image-921 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2018/11/3_Nav_Popup.jpg" alt="" width="544" height="297" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/3_Nav_Popup.jpg 544w, https://www.forcelearn.com/wp-content/uploads/2018/11/3_Nav_Popup-300x164.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/3_Nav_Popup-370x202.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/3_Nav_Popup-270x147.jpg 270w" sizes="(max-width: 544px) 100vw, 544px" /><img class="size-full wp-image-922 alignnone" src="http://www.forcelearn.com/wp-content/uploads/2018/11/4_Nav_Tutorials.jpg" alt="" width="603" height="317" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/4_Nav_Tutorials.jpg 603w, https://www.forcelearn.com/wp-content/uploads/2018/11/4_Nav_Tutorials-300x158.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/4_Nav_Tutorials-370x195.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/4_Nav_Tutorials-270x142.jpg 270w, https://www.forcelearn.com/wp-content/uploads/2018/11/4_Nav_Tutorials-570x300.jpg 570w" sizes="(max-width: 603px) 100vw, 603px" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>How do you make those components handy for your next day?</li>
+</ol>
+<ul>
+<li>Here Rajni’s classes shows list of <strong>logged in/view as</strong> user’s recently created/modified classes.</li>
+</ul>
+<p>Like classes there are 20 more metadata.</p>
+<ol start="3">
+<li>What do you do if you want to know your colleague components name?</li>
+</ol>
+<p>Just write your colleague name in search box to list out all metadata name of the user.</p>
+<p><img class="aligncenter size-full wp-image-923" src="http://www.forcelearn.com/wp-content/uploads/2018/11/5_Nav_Search.jpg" alt="" width="628" height="130" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/5_Nav_Search.jpg 628w, https://www.forcelearn.com/wp-content/uploads/2018/11/5_Nav_Search-300x62.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/5_Nav_Search-370x77.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/5_Nav_Search-270x56.jpg 270w" sizes="(max-width: 628px) 100vw, 628px" /></p>
+<ol start="4">
+<li>How do you see only of your debug logs?</li>
+</ol>
+<ul>
+<li>Click on debug logs menu to view only of your debug logs, which is available on all page of salesforce.</li>
+</ul>
+<p><img class="aligncenter size-full wp-image-924" src="http://www.forcelearn.com/wp-content/uploads/2018/11/6_Nav_Debug.jpg" alt="" width="515" height="296" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/6_Nav_Debug.jpg 515w, https://www.forcelearn.com/wp-content/uploads/2018/11/6_Nav_Debug-300x172.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/6_Nav_Debug-370x213.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/6_Nav_Debug-270x155.jpg 270w" sizes="(max-width: 515px) 100vw, 515px" /></p>
+<ul>
+<li>Go to debug logs page and click on my logs button</li>
+</ul>
+<p><img class="aligncenter size-full wp-image-925" src="http://www.forcelearn.com/wp-content/uploads/2018/11/7_Nav_Debug_logs.jpg" alt="" width="582" height="190" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/7_Nav_Debug_logs.jpg 582w, https://www.forcelearn.com/wp-content/uploads/2018/11/7_Nav_Debug_logs-300x98.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/7_Nav_Debug_logs-370x121.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/7_Nav_Debug_logs-270x88.jpg 270w" sizes="(max-width: 582px) 100vw, 582px" /></p>
+<ul>
+<li>Click on my logs, Log for selected user/logged in user only.</li>
+</ul>
+<p><img class="aligncenter size-full wp-image-926" src="http://www.forcelearn.com/wp-content/uploads/2018/11/8_Nav_Debug_Logs_2.jpg" alt="" width="584" height="238" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/8_Nav_Debug_Logs_2.jpg 584w, https://www.forcelearn.com/wp-content/uploads/2018/11/8_Nav_Debug_Logs_2-300x122.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/8_Nav_Debug_Logs_2-370x151.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/8_Nav_Debug_Logs_2-270x110.jpg 270w" sizes="(max-width: 584px) 100vw, 584px" /></p>
+<ol start="5">
+<li>How do you delete only of your debug logs?
+<ul>
+<li>Click on delete my logs to delete the logs of selected user/logged in user.</li>
+</ul>
+</li>
+</ol>
+<p><img class="aligncenter size-full wp-image-927" src="http://www.forcelearn.com/wp-content/uploads/2018/11/9_Nav_Debug_Delete_Logs.jpg" alt="" width="577" height="235" srcset="https://www.forcelearn.com/wp-content/uploads/2018/11/9_Nav_Debug_Delete_Logs.jpg 577w, https://www.forcelearn.com/wp-content/uploads/2018/11/9_Nav_Debug_Delete_Logs-300x122.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/11/9_Nav_Debug_Delete_Logs-370x151.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/11/9_Nav_Debug_Delete_Logs-270x110.jpg 270w" sizes="(max-width: 577px) 100vw, 577px" /></p>
+<ol start="6">
+<li>What do you do, if you want to see debug logs for other user only?
+<ul>
+<li>Hover on red icon</li>
+<li>Click on view as menu</li>
+<li>Change viewing as user by clicking on view as different user.</li>
+<li>click on debug logs or My logs button on debug logs page.</li>
+</ul>
+</li>
+</ol>
+<p>Our Sincere Thanks to <a href="https://www.linkedin.com/in/rajnikantroy/" target="_blank" rel="noopener">Rajini kant Roy</a>  from <a href="https://www.forcelearn.com" target="_blank" rel="noopener">ForceLearn</a> Team for your Guest Post. If you are looking to be a part check these : <a href="https://www.forcelearn.com/guest-post/" target="_blank" rel="noopener">GuestPost</a></p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noreferrer noopener">ForceLearn</a><br />
+keep share to help others <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+No tags for this post.<p>The post <a rel="nofollow" href="https://www.forcelearn.com/salesforce-simplified-google-chrome-extenstions/">Salesforce Simplified Google Chrome Extensions for Salesforce development</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/salesforce-simplified-google-chrome-extenstions/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Migrate Javascript buttons into Lightning with Lightning Configuration Tool in Salesforce</title>
+		<link>https://www.forcelearn.com/migrate-javascript-buttons-into-lightning-with-lightning-configuration-tool-in-salesforce/</link>
+		<comments>https://www.forcelearn.com/migrate-javascript-buttons-into-lightning-with-lightning-configuration-tool-in-salesforce/#respond</comments>
+		<pubDate>Mon, 24 Sep 2018 17:29:41 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Lightning]]></category>
+		<category><![CDATA[JavaScript Buttons]]></category>
+		<category><![CDATA[Lightning Configuration Tool]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=891</guid>
+		<description><![CDATA[<p>Today we discuss about Salesforce Lightning Configuration tool Looking for lightning migration … stuck to convert Javascript button into lightning. Salesforce launched a tool named as Lightning Experience Configuration Converter , It helps us to convert custom JavaScript buttons into lightning As you aware of that JavaScript buttons and URL hack will now work in lightning Experience. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/migrate-javascript-buttons-into-lightning-with-lightning-configuration-tool-in-salesforce/">Migrate Javascript buttons into Lightning with Lightning Configuration Tool in Salesforce</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><!-- wp:paragraph --></p>
+<div id="dpsp-content-top" class="dpsp-content-wrapper dpsp-shape-circle dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background">
+<p>Today we discuss about Salesforce Lightning Configuration tool Looking for lightning migration … stuck to convert Javascript button into lightning. Salesforce launched a tool named as <strong>Lightning Experience Configuration Converter </strong>, It helps us to convert custom JavaScript buttons into lightning</p>
+</div>
+<p>As you aware of that JavaScript buttons and URL hack will now work in lightning Experience. In order to achieve your requirements designed on JavaScript buttons, you need to design lightning component  and call that button using Lightning Quick Action.</p>
+<p>In order to reduce lightning migration efforts salesforce launched Lightning experience configuration tool.</p>
+<p>Here i have taken an use case. I have design a button on Account Layout, onclick on button it will display alert to user with account name is work designed based on JavaScript button.</p>
+<p><script src="https://gist.github.com/forcelearn/0a08d947dda518f43e320278abca7a60.js"></script></p>
+<p>Today we discuss about Salesforce Lightning Configuration tool Looking for lightning migration &#8230; stuck to convert Javascript button into lightning.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Login to <a href="https://lightning-configuration.salesforce.com/">https://lightning-configuration.salesforce.com/</a></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":897} --></p>
+<figure class="wp-block-image"><img class="wp-image-897" src="http://www.forcelearn.com/wp-content/uploads/2018/09/Lightning_Experience_Configuration_Converter_Tool_Login.jpg" alt="" srcset="https://www.forcelearn.com/wp-content/uploads/2018/09/Lightning_Experience_Configuration_Converter_Tool_Login.jpg 705w, https://www.forcelearn.com/wp-content/uploads/2018/09/Lightning_Experience_Configuration_Converter_Tool_Login-300x127.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/09/Lightning_Experience_Configuration_Converter_Tool_Login-370x157.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/09/Lightning_Experience_Configuration_Converter_Tool_Login-270x115.jpg 270w" sizes="(max-width: 705px) 100vw, 705px" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>and login into your salesforce sandbox/dev org and check for your button your looking for lightning migration.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":892} --></p>
+<figure class="wp-block-image"><img class="wp-image-892" src="http://www.forcelearn.com/wp-content/uploads/2018/09/Convert_Deploy.jpg" alt="" srcset="https://www.forcelearn.com/wp-content/uploads/2018/09/Convert_Deploy.jpg 720w, https://www.forcelearn.com/wp-content/uploads/2018/09/Convert_Deploy-300x47.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/09/Convert_Deploy-370x58.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/09/Convert_Deploy-270x42.jpg 270w" sizes="(max-width: 720px) 100vw, 720px" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>I have take here <strong>Account Name</strong> as sample javaScript button which provide account name in alert. Iam trying to migrate these java script button into lightning</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":894} --></p>
+<figure class="wp-block-image"><img class="wp-image-894" src="http://www.forcelearn.com/wp-content/uploads/2018/09/Converting.jpg" alt="" srcset="https://www.forcelearn.com/wp-content/uploads/2018/09/Converting.jpg 657w, https://www.forcelearn.com/wp-content/uploads/2018/09/Converting-300x87.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/09/Converting-370x108.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/09/Converting-270x78.jpg 270w" sizes="(max-width: 657px) 100vw, 657px" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>click on that button and select convert and deploy  button will convert in few seconds</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":895} --></p>
+<figure class="wp-block-image"><img class="wp-image-895" src="http://www.forcelearn.com/wp-content/uploads/2018/09/Deployed-Button.jpg" alt="" srcset="https://www.forcelearn.com/wp-content/uploads/2018/09/Deployed-Button.jpg 651w, https://www.forcelearn.com/wp-content/uploads/2018/09/Deployed-Button-300x85.jpg 300w, https://www.forcelearn.com/wp-content/uploads/2018/09/Deployed-Button-370x105.jpg 370w, https://www.forcelearn.com/wp-content/uploads/2018/09/Deployed-Button-270x77.jpg 270w" sizes="(max-width: 651px) 100vw, 651px" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Navigate to converted buttons you will find converted button and which contains a lightning component designed for button</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>login into your org and add into button on page layout and  test it in lightning version. You have successfully migrated javascript button into lightning with help of Lightning Experience configuration tool.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noreferrer noopener">ForceLearn</a><br />
+keep share to help others <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><!-- /wp:paragraph --></p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/javascript-buttons/" title="JavaScript Buttons" rel="tag">JavaScript Buttons</a>, <a href="https://www.forcelearn.com/tag/lightning-configuration-tool/" title="Lightning Configuration Tool" rel="tag">Lightning Configuration Tool</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/migrate-javascript-buttons-into-lightning-with-lightning-configuration-tool-in-salesforce/">Migrate Javascript buttons into Lightning with Lightning Configuration Tool in Salesforce</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/migrate-javascript-buttons-into-lightning-with-lightning-configuration-tool-in-salesforce/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Display Lightning Component on VisualForce page</title>
+		<link>https://www.forcelearn.com/display-lightning-component-on-visualforce-page/</link>
+		<comments>https://www.forcelearn.com/display-lightning-component-on-visualforce-page/#respond</comments>
+		<pubDate>Tue, 10 Jul 2018 08:54:23 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Lightning]]></category>
+		<category><![CDATA[Lightning component]]></category>
+		<category><![CDATA[Lightning component in Visualforce page]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=865</guid>
+		<description><![CDATA[<p>Display Lightning Component on VisualForce page Today we discuss about how to display lightning Component in visualforce page, we have design multiple lightning component in lightning to achieve functionality to client. If you want to show you existing lightning component in visualforce page. LightningComponent.cmp LightningApplication.app ltng:outApp allow you to implement SLDS functionlaity on lightning component [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/display-lightning-component-on-visualforce-page/">Display Lightning Component on VisualForce page</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h1>Display Lightning Component on VisualForce page</h1>
+<p>Today we discuss about how to display lightning Component in visualforce page, we have design multiple lightning component in lightning to achieve functionality to client. If you want to show you existing lightning component in visualforce page.</p>
+<h3>LightningComponent.cmp</h3>
+<p><script src="https://gist.github.com/forcelearn/79ab68adf7ab6794322dfcbf0af48e30.js"></script></p>
+<h3>LightningApplication.app</h3>
+<p><script src="https://gist.github.com/forcelearn/61a1b31ae95d68a1e68a0ec550a8808a.js"></script></p>
+<ul>
+<li>ltng:outApp allow you to implement SLDS functionlaity on lightning component</li>
+<li>Global inalization helps you to access lightning component all over in your salesforce org.</li>
+<li>Resource is helping us to call lightning component into our lightning application</li>
+</ul>
+<h3>Visualforce page</h3>
+<p><script src="https://gist.github.com/forcelearn/026d1b745838d71d9336c2e7b272cb9c.js"></script></p>
+<ul>
+<li>Show header is equal to false which hides header in our visualforce page.</li>
+<li>Sidebar is equal to false which hides side bar in our visualforce page.</li>
+<li>$Lightning.use calling the lightning application of our org into visualforce page.</li>
+<li>createComponent which helps us to view lighting component in our visualforce page.</li>
+<li>LightningComponentid assigned id to div tag which shows to display output of lightning component in visualforce page.</li>
+<li>console.log is similar to system.debug in visualforce page which helps to debug Javascript controller</li>
+<li>if you are looking to change UI of lightning component you can add your custom CSS.</li>
+</ul>
+<h2>OutPut:</h2>
+<p><img class="aligncenter size-full wp-image-868" src="http://www.forcelearn.com/wp-content/uploads/2018/07/Display-Lightning-Component-on-VisualForce-pages.gif" alt="" width="600" height="271" /></p>
+<p>&nbsp;</p>
+<p>Reference : <a href="https://trailhead.salesforce.com/en/projects/workshop-lightning-programmatic/steps/programmatic-step-6" target="_blank" rel="noopener">Check here</a></p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br />
+keep share to help others  <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/lightning-component/" title="Lightning component" rel="tag">Lightning component</a>, <a href="https://www.forcelearn.com/tag/lightning-component-in-visualforce-page/" title="Lightning component in Visualforce page" rel="tag">Lightning component in Visualforce page</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/display-lightning-component-on-visualforce-page/">Display Lightning Component on VisualForce page</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/display-lightning-component-on-visualforce-page/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Hide/Show Button Onclick on Another Button in Salesforce Lightning Using Javascript</title>
+		<link>https://www.forcelearn.com/hide-show-button-onclick-on-another-button-in-salesforce-lightning-using-javascript/</link>
+		<comments>https://www.forcelearn.com/hide-show-button-onclick-on-another-button-in-salesforce-lightning-using-javascript/#respond</comments>
+		<pubDate>Fri, 06 Jul 2018 08:40:39 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Lightning]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=860</guid>
+		<description><![CDATA[<p>Hide/Show Button Onclick on Another Button in Salesforce Lightning Using Javascript Javascript is well known for functionality to hide and show button, We have followed the below snippet to show the functionality to hide and show button with help of css. display show will help us to display button in UI layout and toggle will [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/hide-show-button-onclick-on-another-button-in-salesforce-lightning-using-javascript/">Hide/Show Button Onclick on Another Button in Salesforce Lightning Using Javascript</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h1>Hide/Show Button Onclick on Another Button in Salesforce Lightning Using Javascript</h1>
+<p>Javascript is well known for functionality to hide and show button, We have followed the below snippet to show the functionality to hide and show button with help of css. display show will help us to display button in UI layout and toggle will change functionality will work on to show or hide button on click on Save Button.#name provide the id of button which need to show or hide in salesforce lightning using Javascript</p>
+<p><script src="https://gist.github.com/forcelearn/cf2f77588a658f6df2531c24b9c5bc6e.js"></script></p>
+<h2>OutPut:</h2>
+<p><img class="wp-image-862 alignleft" src="http://www.forcelearn.com/wp-content/uploads/2018/07/Hide_Show_Button_on_Click.gif" alt="" width="282" height="115" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br />
+keep share to help others  <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+No tags for this post.<p>The post <a rel="nofollow" href="https://www.forcelearn.com/hide-show-button-onclick-on-another-button-in-salesforce-lightning-using-javascript/">Hide/Show Button Onclick on Another Button in Salesforce Lightning Using Javascript</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/hide-show-button-onclick-on-another-button-in-salesforce-lightning-using-javascript/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Pie Charts in Visualforce Salesforce using Google Charts</title>
+		<link>https://www.forcelearn.com/pie-charts-in-visualforce-salesforce-using-google-charts/</link>
+		<comments>https://www.forcelearn.com/pie-charts-in-visualforce-salesforce-using-google-charts/#respond</comments>
+		<pubDate>Mon, 11 Jun 2018 16:49:22 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Lightning]]></category>
+		<category><![CDATA[Lightning component]]></category>
+		<category><![CDATA[lightning tutorials]]></category>
+		<category><![CDATA[salesforce lightning]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=794</guid>
+		<description><![CDATA[<p>Pie Charts in Visualforce Salesforce using Google Charts Today i have requirement that we need to design Pie chart visualforce page using Google Charts . So i have designed code on work through below code.We have designed using in visualforce page with SLDS functionality. Code Proceedings: Loader.js is used to design store javascript functionality to load [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/pie-charts-in-visualforce-salesforce-using-google-charts/">Pie Charts in Visualforce Salesforce using Google Charts</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h1>Pie Charts in Visualforce Salesforce using Google Charts</h1>
+<p>Today i have requirement that we need to design Pie chart visualforce page using Google Charts . So i have designed code on work through below code.We have designed using in visualforce page with SLDS functionality.</p>
+<h2>Code Proceedings:</h2>
+<p>Loader.js is used to design store javascript functionality to load functionality.<br />
+Used Lightning Style sheets is equal to true to allow SLDS view in Visualforce page.<br />
+Task and Hours per day are variables initialize in  code.<br />
+apex:slds to support SLDS in visualforce page<br />
+Script tag contains java script code to run on click on checkbox to Display button.</p>
+<h3>Code<br />
+<script src="https://gist.github.com/forcelearn/306770a486efc2efdb7fc5f4d754bca3.js"></script></h3>
+<h1>Output:</h1>
+<p><img class="aligncenter size-full wp-image-797" src="http://www.forcelearn.com/wp-content/uploads/2018/06/Google_Charts_in_Visualforce-page.gif" alt="" width="434" height="358" />Comment use if you face any problems while implementing</p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : ForceLearn<br />
+keep share to help others</p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/lightning/" title="Lightning" rel="tag">Lightning</a>, <a href="https://www.forcelearn.com/tag/lightning-component/" title="Lightning component" rel="tag">Lightning component</a>, <a href="https://www.forcelearn.com/tag/lightning-tutorials/" title="lightning tutorials" rel="tag">lightning tutorials</a>, <a href="https://www.forcelearn.com/tag/salesforce-lightning/" title="salesforce lightning" rel="tag">salesforce lightning</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/pie-charts-in-visualforce-salesforce-using-google-charts/">Pie Charts in Visualforce Salesforce using Google Charts</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/pie-charts-in-visualforce-salesforce-using-google-charts/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Display button on click on checkbox</title>
+		<link>https://www.forcelearn.com/display-button-on-click-on-checkbox/</link>
+		<comments>https://www.forcelearn.com/display-button-on-click-on-checkbox/#respond</comments>
+		<pubDate>Sun, 03 Jun 2018 14:01:11 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Lightning]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Lightning component]]></category>
+		<category><![CDATA[SLDS]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=786</guid>
+		<description><![CDATA[<p>Display button on click on checkbox Hi guys, Today i have requirement that we need to design visualforce  page that need to show button on click on check box So i have designed code on work through below code.We have designed using in visualforce page with SLDS functionality. Code Proceedings: Used Lightning Style sheets is [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/display-button-on-click-on-checkbox/">Display button on click on checkbox</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h1><strong>Display button on click on checkbox</strong></h1>
+<p><strong>H</strong>i guys,</p>
+<p>Today i have requirement that we need to design visualforce  page that need to show button on click on check box<br />
+So i have designed code on work through below code.We have designed using in visualforce page with SLDS functionality.</p>
+<p><em><strong>Code Proceedings:</strong></em></p>
+<ul>
+<li>Used Lightning Style sheets is equal to true to allow SLDS view in Visualforce page.</li>
+<li>apex:slds to support SLDS in visualforce page</li>
+<li>Script tag contains java script code to run on click on checkbox to Display button</li>
+<li>Clicked is used as Id in visualforce page button and red is used as id to checkbox</li>
+</ul>
+<p><script src="https://gist.github.com/forcelearn/2729ca118ea81b9e52c3beecd24de61a.js"></script></p>
+<p>Comment use if you face any problems while implementing</p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br />
+keep share to help others  <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/javascript/" title="Javascript" rel="tag">Javascript</a>, <a href="https://www.forcelearn.com/tag/lightning-component/" title="Lightning component" rel="tag">Lightning component</a>, <a href="https://www.forcelearn.com/tag/slds/" title="SLDS" rel="tag">SLDS</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/display-button-on-click-on-checkbox/">Display button on click on checkbox</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/display-button-on-click-on-checkbox/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Set Up Two-Factor Authentication in Salesforce</title>
+		<link>https://www.forcelearn.com/set-up-two-factor-authentication-in-salesforce/</link>
+		<comments>https://www.forcelearn.com/set-up-two-factor-authentication-in-salesforce/#respond</comments>
+		<pubDate>Thu, 24 May 2018 02:44:18 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=768</guid>
+		<description><![CDATA[<p>Set Up Two-Factor Authentication in Salesforce Two-Factor Authentication is helps you secure more our authentication based on user login.Two-Factor Authentication contains two things or two factor required to access your account. The first factor is something your knows like your username and password and second factor is Something you have like connected mobile device which [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/set-up-two-factor-authentication-in-salesforce/">Set Up Two-Factor Authentication in Salesforce</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h1>Set Up Two-Factor Authentication in Salesforce</h1>
+<p><strong>Two-Factor Authentication</strong> is helps you secure more our authentication based on user login.Two-Factor Authentication contains two things or two factor required to access your account. The first factor is <strong>something your knows</strong> like your username and password and second factor is <strong>Something you have</strong> like connected mobile device which show secure code need to matched to successfully login to your account.<br />
+Two-Factor Authentication is also known as 2FA, two step verification or TFA.<br />
+<img class="aligncenter wp-image-778" title="Two_Factor_Authenticate" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User_1.png" alt="" width="538" height="243" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User_1.png 795w, https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User_1-300x135.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User_1-768x347.png 768w, https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User_1-370x167.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User_1-270x122.png 270w, https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User_1-740x334.png 740w" sizes="(max-width: 538px) 100vw, 538px" /><br />
+We utilize Two-Factor Authentication many more time in our day to day activites like<br />
+when you access you google account when email is connected to mobile device it shows popup like numerical to tap that matches on your screen. When you are making any banking transaction, you will get OTP(One Time Password) is required to completed your transaction successfully.</p>
+<p>Now its time to secure your <strong>salesforce</strong> org from risk vulnerabilities.</p>
+<h1>How to Set Up Two-Factor Authentication in Salesforce ??</h1>
+<p>Firstly, you need to create <strong>permission set</strong> for two factor Authentication<br />
+path : Setup &#8212; Administer &#8212; Manage users &#8211; Permission Set<br />
+click on New<br />
+<img class="aligncenter wp-image-772" title="Permission_Set_Two_Factor_Authenticate" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Permission_Set_Two_Factor_Authenticate.png" alt="" width="562" height="353" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/Permission_Set_Two_Factor_Authenticate.png 859w, https://www.forcelearn.com/wp-content/uploads/2018/05/Permission_Set_Two_Factor_Authenticate-300x188.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/05/Permission_Set_Two_Factor_Authenticate-768x482.png 768w, https://www.forcelearn.com/wp-content/uploads/2018/05/Permission_Set_Two_Factor_Authenticate-370x232.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/05/Permission_Set_Two_Factor_Authenticate-270x169.png 270w, https://www.forcelearn.com/wp-content/uploads/2018/05/Permission_Set_Two_Factor_Authenticate-740x464.png 740w" sizes="(max-width: 562px) 100vw, 562px" /><br />
+Label as Two_Factor_Authenticate<br />
+Api is Auto generated like<br />
+click on save.</p>
+<p>then move to Under system, click on System Permissions.<br />
+<img class="aligncenter wp-image-777" title="System_Two_Factor_Authenticate" src="http://www.forcelearn.com/wp-content/uploads/2018/05/System_Two_Factor_Authenticate.png" alt="" width="736" height="136" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/System_Two_Factor_Authenticate.png 796w, https://www.forcelearn.com/wp-content/uploads/2018/05/System_Two_Factor_Authenticate-300x55.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/05/System_Two_Factor_Authenticate-768x142.png 768w, https://www.forcelearn.com/wp-content/uploads/2018/05/System_Two_Factor_Authenticate-370x68.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/05/System_Two_Factor_Authenticate-270x50.png 270w, https://www.forcelearn.com/wp-content/uploads/2018/05/System_Two_Factor_Authenticate-740x137.png 740w" sizes="(max-width: 736px) 100vw, 736px" /><br />
+click on edit and check Two-Factor Authentication for User Interface Logins and click on save.<br />
+<img class="aligncenter wp-image-775 size-full" title="Two_Factor_Authentication_For_Users" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Two_Factor_Authentication_For_Users.png" alt="" width="952" height="39" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/Two_Factor_Authentication_For_Users.png 952w, https://www.forcelearn.com/wp-content/uploads/2018/05/Two_Factor_Authentication_For_Users-300x12.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/05/Two_Factor_Authentication_For_Users-768x31.png 768w, https://www.forcelearn.com/wp-content/uploads/2018/05/Two_Factor_Authentication_For_Users-370x15.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/05/Two_Factor_Authentication_For_Users-270x11.png 270w, https://www.forcelearn.com/wp-content/uploads/2018/05/Two_Factor_Authentication_For_Users-740x30.png 740w" sizes="(max-width: 952px) 100vw, 952px" /><br />
+Tap on Manage Assignments and add assignments to required use to required two factor authentication.<br />
+<img class="aligncenter wp-image-769 size-full" title="Assign_To_User" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User.png" alt="" width="626" height="216" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User.png 626w, https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User-300x104.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User-370x128.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/05/Assign_To_User-270x93.png 270w" sizes="(max-width: 626px) 100vw, 626px" /><br />
+click on Assign.<br />
+<img class="aligncenter wp-image-774 size-full" title="SucessFullY_Done" src="http://www.forcelearn.com/wp-content/uploads/2018/05/SucessFullY_Done.png" alt="" width="1081" height="208" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/SucessFullY_Done.png 1081w, https://www.forcelearn.com/wp-content/uploads/2018/05/SucessFullY_Done-300x58.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/05/SucessFullY_Done-768x148.png 768w, https://www.forcelearn.com/wp-content/uploads/2018/05/SucessFullY_Done-1024x197.png 1024w, https://www.forcelearn.com/wp-content/uploads/2018/05/SucessFullY_Done-370x71.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/05/SucessFullY_Done-270x52.png 270w, https://www.forcelearn.com/wp-content/uploads/2018/05/SucessFullY_Done-740x142.png 740w" sizes="(max-width: 1081px) 100vw, 1081px" /><br />
+Tap on Done.<br />
+Now you have successfully assigned permission set to user . Logout if that user is already login</p>
+<p>what&#8217;s more, attempt to re-login again,now you will get salesforce authenticator popup on your screen to move further you need Android or IOS application need to be installed in phone.<br />
+<img class="aligncenter wp-image-773" title="Salesforce_Authenticator_popup" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Salesforce_Authenticator_popup.png" alt="" width="276" height="477" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/Salesforce_Authenticator_popup.png 362w, https://www.forcelearn.com/wp-content/uploads/2018/05/Salesforce_Authenticator_popup-173x300.png 173w, https://www.forcelearn.com/wp-content/uploads/2018/05/Salesforce_Authenticator_popup-270x467.png 270w" sizes="(max-width: 276px) 100vw, 276px" /><br />
+Download and install Salesforce Authenticator for iOS from the App Store or Salesforce Authenticator for Android from Google Play<br />
+Enter your secure code to which display on phone. For first time connection it asks Two-Word Phrase which displays on Salesforce Authenticator app. Then you need to provide once you connected successfully. you need  to enter secure code which displays to mobile phone to login into your account.<br />
+<img class="aligncenter wp-image-770" title="Mobile_Authentication" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Mobile_Authentication.png" alt="" width="404" height="211" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/Mobile_Authentication.png 729w, https://www.forcelearn.com/wp-content/uploads/2018/05/Mobile_Authentication-300x157.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/05/Mobile_Authentication-370x193.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/05/Mobile_Authentication-270x141.png 270w" sizes="(max-width: 404px) 100vw, 404px" /><br />
+Then we need to enter Salesforce Authenticator secure code into your browser login page.<br />
+<img class="aligncenter wp-image-771 size-full" title="Output_Two_Factor_Authentication" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Output_Two_Factor_Authentication.gif" alt="" width="600" height="274" /></p>
+<p>you are now login to your salesforce org using two factor Authentication <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Comment use if you face any problems while implementing</p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br />
+keep share to help others  <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+No tags for this post.<p>The post <a rel="nofollow" href="https://www.forcelearn.com/set-up-two-factor-authentication-in-salesforce/">Set Up Two-Factor Authentication in Salesforce</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/set-up-two-factor-authentication-in-salesforce/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>How to use Header Tags In VisualForce Pages and Lightning Components</title>
+		<link>https://www.forcelearn.com/how-to-use-header-tags-in-visualforce-pages-and-lightning-components/</link>
+		<comments>https://www.forcelearn.com/how-to-use-header-tags-in-visualforce-pages-and-lightning-components/#respond</comments>
+		<pubDate>Mon, 14 May 2018 11:00:51 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Lightning]]></category>
+		<category><![CDATA[Lightning component]]></category>
+		<category><![CDATA[lightning tutorials]]></category>
+		<category><![CDATA[salesforce lightning]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=753</guid>
+		<description><![CDATA[<p>How to use Header Tags In VisualForce Pages and Lightning Components Hi Guys, Today Iam explain How to use Header Tags In VisualForce Pages and Lightning Components I have tried to used above snippet i am getting output as below and I have designed a lightning component as below and output of lightning is we [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/how-to-use-header-tags-in-visualforce-pages-and-lightning-components/">How to use Header Tags In VisualForce Pages and Lightning Components</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<h1>How to use Header Tags In VisualForce Pages and Lightning Components</h1>
+<p>Hi Guys, Today Iam explain How to use Header Tags In VisualForce Pages and Lightning Components<br />
+<script src="https://gist.github.com/forcelearn/09016fe6dc6a7cfb9b4520bcefba8b51.js"></script><br />
+I have tried to used above snippet i am getting output as below<br />
+<img class="size-full wp-image-756 aligncenter" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Header_Tags_in_VisualForce_Page_Error.png" alt="" width="421" height="31" srcset="https://www.forcelearn.com/wp-content/uploads/2018/05/Header_Tags_in_VisualForce_Page_Error.png 421w, https://www.forcelearn.com/wp-content/uploads/2018/05/Header_Tags_in_VisualForce_Page_Error-300x22.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/05/Header_Tags_in_VisualForce_Page_Error-370x27.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/05/Header_Tags_in_VisualForce_Page_Error-270x20.png 270w" sizes="(max-width: 421px) 100vw, 421px" /><br />
+and I have designed a lightning component as below<br />
+<script src="https://gist.github.com/forcelearn/62e19103535c876cd860fbed2fbcc76c.js"></script><br />
+and output of lightning is we are getting line break is happen but we are unable to display font size based on header tags<br />
+<img class="aligncenter size-full wp-image-755" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Header_Tags_in_Lightning_Component_Failure.png" alt="" width="81" height="119" /><br />
+Then i have added standardStylesheets=&#8221;false&#8221; into snipet will fix issue<br />
+<script src="https://gist.github.com/forcelearn/09d8037bb98936014e3f5697809dc483.js"></script><br />
+In Lightning component I have added custom CSS and applied it to Header Tags to fix issue.<br />
+<script src="https://gist.github.com/forcelearn/62e19103535c876cd860fbed2fbcc76c.js"></script><br />
+<script src="https://gist.github.com/forcelearn/497eb27570054c6960efb19205255f23.js"></script></p>
+<h2>output:</h2>
+<p><img class="aligncenter size-full wp-image-765" src="http://www.forcelearn.com/wp-content/uploads/2018/05/Header_Tags_in_Salesforce_Outputs.gif" alt="" width="600" height="278" /></p>
+<p>&nbsp;</p>
+<h1>Note:</h1>
+<p>your tags are inside div tags styles will not apper for that you need change style<br />
+from<br />
+h1.THIS{<br />
+font-size:18pt;<br />
+}</p>
+<p>to<br />
+.THIS h2{<br />
+font-size:16pt;<br />
+}</p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br />
+keep share to help others  <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/lightning/" title="Lightning" rel="tag">Lightning</a>, <a href="https://www.forcelearn.com/tag/lightning-component/" title="Lightning component" rel="tag">Lightning component</a>, <a href="https://www.forcelearn.com/tag/lightning-tutorials/" title="lightning tutorials" rel="tag">lightning tutorials</a>, <a href="https://www.forcelearn.com/tag/salesforce-lightning/" title="salesforce lightning" rel="tag">salesforce lightning</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/how-to-use-header-tags-in-visualforce-pages-and-lightning-components/">How to use Header Tags In VisualForce Pages and Lightning Components</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/how-to-use-header-tags-in-visualforce-pages-and-lightning-components/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

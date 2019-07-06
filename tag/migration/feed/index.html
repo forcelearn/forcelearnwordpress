@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Migration &#8211; ForceLearn</title>
+	<atom:link href="https://www.forcelearn.com/tag/migration/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.forcelearn.com</link>
+	<description>Learn Salesforce Developement tip and tricks</description>
+	<lastBuildDate>Sun, 28 Apr 2019 20:18:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+
+<image>
+	<url>https://www.forcelearn.com/wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png</url>
+	<title>Migration &#8211; ForceLearn</title>
+	<link>https://www.forcelearn.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Connect ANT tool to salesforce org</title>
+		<link>https://www.forcelearn.com/how-to-connect-ant-tool-to-salesforce-org/</link>
+		<comments>https://www.forcelearn.com/how-to-connect-ant-tool-to-salesforce-org/#respond</comments>
+		<pubDate>Mon, 19 Feb 2018 13:28:48 +0000</pubDate>
+		<dc:creator><![CDATA[forcelearn]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[ANT]]></category>
+		<category><![CDATA[Deployment]]></category>
+		<category><![CDATA[Migration]]></category>
+
+		<guid isPermaLink="false">http://www.forcelearn.com/?p=539</guid>
+		<description><![CDATA[<p>In Previous Post we have discussed about how to install ANT tool for windows .Now we need to connect your salesforce org with ANT in your local machine. To deploy and retrive data from salesforce org For that enter into files where you extracted salesforce ant folder 1. Ant-Salesforce &#8211;&#62; sample &#8211;&#62; open build.properties with notepad [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/how-to-connect-ant-tool-to-salesforce-org/">Connect ANT tool to salesforce org</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>In Previous Post we have discussed about <a href="https://www.forcelearn.com/installing-force-com-migration-tool-with-ant-tool-in-windows-for-salesforce-developers/" target="_blank" rel="noopener">how to install ANT tool for windows</a> .Now we need to connect your salesforce org with ANT in your local machine. To deploy and retrive data from salesforce org</p>
+<p>For that enter into files where you extracted salesforce ant folder<br />
+1. Ant-Salesforce &#8211;&gt; sample &#8211;&gt; open build.properties with notepad<br />
+2. Replace sf.username: forcelearnXYZ@gmail.com<br />
+sf.password: XXXXXXXXXXXXXXXXXXXXXXX</p>
+<p>Note : sf.serverurl = https://login.salesforce.com change url into https://test.salesforce.com if you want to use for sandbox</p>
+<p>3. Create a folder named as target in ANT&#8217;s Installation folder inside bin<br />
+C:\apache-ant-1.10.2-bin\apache-ant-1.10.2\bin\</p>
+<p>4. Copy and paste build.xml into new target folder</p>
+<p>5. create a package.xml in your new folder target<br />
+<script src="https://gist.github.com/forcelearn/bf443721e523465d1bbe3e61c5d9a4c4.js"></script></p>
+<p>6. To get all class into your org we need to use ant retrieveUnpackaged<br />
+<script src="https://gist.github.com/forcelearn/f61263470c3a38c20d2f10c99d4f4044.js"></script></p>
+<p>check folder retrieveTarget to check your classes and trigger</p>
+<p>7. Open Command Prompt in your system and navigate to ANT path  type</p>
+<p>Ant &#8211; retrieveTarget</p>
+<p>8. To get class from org.</p>
+<p>Hurry !! <img src="https://s.w.org/images/core/emoji/11/72x72/1f60e.png" alt="😎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f60e.png" alt="😎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f60e.png" alt="😎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Now retrieve all class from org into local machine.</p>
+<p>Please comments us for more updates and share to other to help.<br />
+Keep Visiting us for more updates<br />
+Like us for more updates<br />
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br />
+keep share to help others  <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+	<div class="st-post-tags">
+	Tags: <a href="https://www.forcelearn.com/tag/ant/" title="ANT" rel="tag">ANT</a>, <a href="https://www.forcelearn.com/tag/deployment/" title="Deployment" rel="tag">Deployment</a>, <a href="https://www.forcelearn.com/tag/migration/" title="Migration" rel="tag">Migration</a><br /></div>
+
+<p>The post <a rel="nofollow" href="https://www.forcelearn.com/how-to-connect-ant-tool-to-salesforce-org/">Connect ANT tool to salesforce org</a> appeared first on <a rel="nofollow" href="https://www.forcelearn.com">ForceLearn</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://www.forcelearn.com/how-to-connect-ant-tool-to-salesforce-org/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

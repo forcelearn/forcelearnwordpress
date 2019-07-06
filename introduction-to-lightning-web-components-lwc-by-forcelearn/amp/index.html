@@ -1,0 +1,438 @@
+<!doctype html>
+<html amp lang="en-US">
+
+<!-- Mirrored from www.forcelearn.com/introduction-to-lightning-web-components-lwc-by-forcelearn/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:26:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<script async custom-element="amp-ad" src="../../../cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<title>Introduction to Lightning Web Components (LWC) By ForceLearn | ForceLearn %</title>
+<link rel="canonical" href="../index.html" />
+<script type='text/javascript' src='../../../cdn.ampproject.org/v0.js' async></script>
+<script type='text/javascript' src='../../../cdn.ampproject.org/v0/amp-anim-0.1.js' async custom-element="amp-anim"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"ForceLearn","logo":{"@type":"ImageObject","url":"http:\/\/www.forcelearn.com\/wp-content\/uploads\/2017\/11\/cropped-4416041-designstyle-boots-l-32x32.png","width":32,"height":32}},"@type":"BlogPosting","mainEntityOfPage":"http:\/\/www.forcelearn.com\/introduction-to-lightning-web-components-lwc-by-forcelearn\/","headline":"Introduction to Lightning Web Components (LWC) By ForceLearn","datePublished":"2019-02-21T20:06:01+00:00","dateModified":"2019-02-21T20:16:29+00:00","author":{"@type":"Person","name":"forcelearn"},"image":{"@type":"ImageObject","url":"http:\/\/www.forcelearn.com\/wp-content\/uploads\/2019\/02\/Introduction_To_Lightning_Web_Components.png","width":1280,"height":720}}</script>
+<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+/* Generic WP styling */
+.alignright {
+float: right;
+}
+.alignleft {
+float: left;
+}
+.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.amp-wp-enforced-sizes {
+/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+max-width: 100%;
+margin: 0 auto;
+}
+.amp-wp-unknown-size img {
+/** Worst case scenario when we can't figure out dimensions for an image. **/
+/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+object-fit: contain;
+}
+/* Template Styles */
+.amp-wp-content,
+.amp-wp-title-bar div {
+margin: 0 auto;
+max-width: 770px;
+}
+html {
+background: #0a89c0;
+}
+body {
+background: #fff;
+color: #353535;
+font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+font-weight: 300;
+line-height: 1.75em;
+}
+p,
+ol,
+ul,
+figure {
+margin: 0 0 1em;
+padding: 0;
+}
+a,
+a:visited {
+color: #0a89c0;
+}
+a:hover,
+a:active,
+a:focus {
+color: #353535;
+}
+/* Quotes */
+blockquote {
+color: #353535;
+background: rgba(127,127,127,.125);
+border-left: 2px solid #0a89c0;
+margin: 8px 0 24px 0;
+padding: 16px;
+}
+blockquote p:last-child {
+margin-bottom: 0;
+}
+/* UI Fonts */
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+/* Header */
+.amp-wp-header {
+background-color: #0a89c0;
+}
+.amp-wp-header div {
+color: #fff;
+font-size: 1em;
+font-weight: 400;
+margin: 0 auto;
+max-width: calc(840px - 32px);
+padding: .875em 16px;
+position: relative;
+}
+.amp-wp-header a {
+color: #fff;
+text-decoration: none;
+}
+/* Site Icon */
+.amp-wp-header .amp-wp-site-icon {
+/** site icon is 32px **/
+background-color: #fff;
+border: 1px solid #fff;
+border-radius: 50%;
+position: absolute;
+right: 18px;
+top: 10px;
+}
+/* Article */
+.amp-wp-article {
+color: #353535;
+font-weight: 400;
+margin: 1.5em auto;
+max-width: 840px;
+overflow-wrap: break-word;
+word-wrap: break-word;
+}
+/* Article Header */
+.amp-wp-article-header {
+align-items: center;
+align-content: stretch;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 1.5em 16px 0;
+}
+.amp-wp-title {
+color: #353535;
+display: block;
+flex: 1 0 100%;
+font-weight: 900;
+margin: 0 0 .625em;
+width: 100%;
+}
+/* Article Meta */
+.amp-wp-meta {
+color: #696969;
+display: inline-block;
+flex: 2 1 50%;
+font-size: .875em;
+line-height: 1.5em;
+margin: 0 0 1.5em;
+padding: 0;
+}
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+text-align: right;
+}
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+text-align: left;
+}
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+display: inline-block;
+vertical-align: middle;
+}
+.amp-wp-byline amp-img {
+border: 1px solid #0a89c0;
+border-radius: 50%;
+position: relative;
+margin-right: 6px;
+}
+.amp-wp-posted-on {
+text-align: right;
+}
+/* Featured image */
+.amp-wp-article-featured-image {
+margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+margin: 0 18px;
+}
+/* Article Content */
+.amp-wp-article-content {
+margin: 0 16px;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+margin-left: 1em;
+}
+.amp-wp-article-content .wp-caption {
+max-width: 100%;
+}
+.amp-wp-article-content amp-img {
+margin: 0 auto;
+}
+.amp-wp-article-content amp-img.alignright {
+margin: 0 0 1em 16px;
+}
+.amp-wp-article-content amp-img.alignleft {
+margin: 0 16px 1em 0;
+}
+/* Captions */
+.wp-caption {
+padding: 0;
+}
+.wp-caption.alignleft {
+margin-right: 16px;
+}
+.wp-caption.alignright {
+margin-left: 16px;
+}
+.wp-caption .wp-caption-text {
+border-bottom: 1px solid #c2c2c2;
+color: #696969;
+font-size: .875em;
+line-height: 1.5em;
+margin: 0;
+padding: .66em 10px .75em;
+}
+/* AMP Media */
+amp-carousel {
+background: #c2c2c2;
+margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+background: #c2c2c2;
+margin: 0 -16px 1.5em;
+}
+.amp-wp-article-content amp-carousel amp-img {
+border: none;
+}
+amp-carousel > amp-img > img {
+object-fit: contain;
+}
+.amp-wp-iframe-placeholder {
+background: #c2c2c2 url( ../../wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+background-size: 48px 48px;
+min-height: 48px;
+}
+/* Article Footer Meta */
+.amp-wp-article-footer .amp-wp-meta {
+display: block;
+}
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+color: #696969;
+font-size: .875em;
+line-height: 1.5em;
+margin: 1.5em 16px;
+}
+.amp-wp-comments-link {
+color: #696969;
+font-size: .875em;
+line-height: 1.5em;
+text-align: center;
+margin: 2.25em 0 1.5em;
+}
+.amp-wp-comments-link a {
+border-style: solid;
+border-color: #c2c2c2;
+border-width: 1px 1px 2px;
+border-radius: 4px;
+background-color: transparent;
+color: #0a89c0;
+cursor: pointer;
+display: block;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+margin: 0 auto;
+max-width: 200px;
+padding: 11px 16px;
+text-decoration: none;
+width: 50%;
+-webkit-transition: background-color 0.2s ease;
+transition: background-color 0.2s ease;
+}
+/* AMP Footer */
+.amp-wp-footer {
+border-top: 1px solid #c2c2c2;
+margin: calc(1.5em - 1px) 0 0;
+}
+.amp-wp-footer div {
+margin: 0 auto;
+max-width: calc(840px - 32px);
+padding: 1.25em 16px 1.25em;
+position: relative;
+}
+.amp-wp-footer h2 {
+font-size: 1em;
+line-height: 1.375em;
+margin: 0 0 .5em;
+}
+.amp-wp-footer p {
+color: #696969;
+font-size: .8em;
+line-height: 1.5em;
+margin: 0 85px 0 0;
+}
+.amp-wp-footer a {
+text-decoration: none;
+}
+.back-to-top {
+bottom: 1.275em;
+font-size: .8em;
+font-weight: 600;
+line-height: 2em;
+position: absolute;
+right: 16px;
+}
+/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-1468335{max-width:673px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-f9d29c1{max-width:577px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-80facb4{max-width:616px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-cf340f6{max-width:325px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-84b4a37{max-width:621px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-b9ddc44{max-width:625px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-6b90a9a{max-width:292px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-d328d33{max-width:615px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-178b00b{max-width:294px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-6bbb41a{max-width:714px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-713531b{max-width:389px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-75cb26c{max-width:1009px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-2c97317{max-width:247px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-ec84bd2{max-width:472px}	</style>
+</head>
+<body class="">
+<header id="top" class="amp-wp-header">
+<div>
+<a href="../../index.html">
+<amp-img src="../../wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png" width="32" height="32" class="amp-wp-site-icon"></amp-img>
+<span class="amp-site-title">
+ForceLearn			</span>
+</a>
+</div>
+</header>
+<article class="amp-wp-article">
+<header class="amp-wp-article-header">
+<h1 class="amp-wp-title">Introduction to Lightning Web Components (LWC) By ForceLearn</h1>
+<div class="amp-wp-meta amp-wp-byline">
+<amp-img src="http://2.gravatar.com/avatar/bbfb2fb66335c9c0bad976a3a88dda85?s=24&amp;r=g" alt="forcelearn" width="24" height="24" layout="fixed"></amp-img>
+<span class="amp-wp-author author vcard">forcelearn</span>
+</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+<time datetime="2019-02-21T20:06:01+00:00">
+3 months ago	</time>
+</div>
+</header>
+<figure class="amp-wp-article-featured-image wp-caption">
+<amp-img width="770" height="433" src="../../wp-content/uploads/2019/02/Introduction_To_Lightning_Web_Components-1024x576.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/Introduction_To_Lightning_Web_Components-1024x576.png 1024w, http://www.forcelearn.com/wp-content/uploads/2019/02/Introduction_To_Lightning_Web_Components-300x169.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/Introduction_To_Lightning_Web_Components-768x432.png 768w, http://www.forcelearn.com/wp-content/uploads/2019/02/Introduction_To_Lightning_Web_Components-370x208.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/Introduction_To_Lightning_Web_Components-270x152.png 270w, http://www.forcelearn.com/wp-content/uploads/2019/02/Introduction_To_Lightning_Web_Components-740x416.png 740w, http://www.forcelearn.com/wp-content/uploads/2019/02/Introduction_To_Lightning_Web_Components.png 1280w" sizes="(max-width: 770px) 100vw, 770px" layout="intrinsic"></amp-img>	</figure>
+<div class="amp-wp-article-content">
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="">
+</div>
+<p class="dpsp-share-text">Sharing is caring!</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad6" id="quads-ad6" style="">
+</div>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad7" id="quads-ad7" style="">
+</div>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad2" id="quads-ad2" style="">
+</div>
+<div id="dpsp-content-top" class="dpsp-content-wrapper dpsp-shape-circle dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content "><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.forcelearn.com%2Fintroduction-to-lightning-web-components-lwc-by-forcelearn%2F&amp;t=Introduction+to+Lightning+Web+Components+%28LWC%29+By+ForceLearn" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Introduction+to+Lightning+Web+Components+%28LWC%29+By+ForceLearn&amp;url=http%3A%2F%2Fwww.forcelearn.com%2Fintroduction-to-lightning-web-components-lwc-by-forcelearn%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.forcelearn.com%2Fintroduction-to-lightning-web-components-lwc-by-forcelearn%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="#" class="dpsp-network-btn dpsp-pinterest"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Pinterest</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Fwww.forcelearn.com%2Fintroduction-to-lightning-web-components-lwc-by-forcelearn%2F&amp;title=Introduction+to+Lightning+Web+Components+%28LWC%29+By+ForceLearn&amp;mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div><p>Hi Guys,</p>
+<p>Welcome back, we have started with new topics to get intro on Lightning web components and Setup for them.</p>
+<h1><strong>Prerequisites</strong>:</h1>
+<ol><li><a href="https://developer.salesforce.com/tools/sfdxcli" target="_blank" rel="noopener">Click here</a> to download Salesforce CLI and install on your local machine</li>
+<li>Open CMD And type <strong> sfdx plugins:install salesforcedx@pre-release </strong></li>
+<li><strong><a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">Download Vs Code </a></strong>from below link and install VS Code in local machine and open it.</li>
+<li>Install Salesforce Extension Pack and salesforce Lightning Web Components from Extensions<figure class="aligncenter amp-wp-1468335"><amp-img class="wp-image-939 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/2_SalesforceExtenstionPack.png" alt="" width="673" height="210" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack.png 1072w, http://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-300x93.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-768x239.png 768w, http://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-1024x319.png 1024w, http://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-370x115.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-270x84.png 270w, http://www.forcelearn.com/wp-content/uploads/2019/02/2_SalesforceExtenstionPack-740x231.png 740w" sizes="(max-width: 673px) 100vw, 673px" layout="intrinsic"></amp-img></figure><!-- WP QUADS Content Ad Plugin v. 1.8.2 --><div class="quads-location quads-ad4" id="quads-ad4" style="">
+</div>
+</li>
+<li>Install Lightning Web Components</li>
+</ol><h2>Developing project in Visual Code</h2>
+<ol><li>   Type Ctrl+Win+P type SFDX So its working prefect.<figure class="aligncenter amp-wp-f9d29c1"><amp-img class="wp-image-940 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/3_Install-Setup.png" alt="" width="577" height="173" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup.png 640w, http://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup-300x90.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup-370x111.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/3_Install-Setup-270x81.png 270w" sizes="(max-width: 577px) 100vw, 577px" layout="intrinsic"></amp-img></figure></li>
+<li>Select Create Project with Manifest and type Project Name<figure class="aligncenter amp-wp-80facb4"><amp-img class="size-full wp-image-941 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest.png" alt="" width="616" height="85" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest.png 616w, http://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest-300x41.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest-370x51.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/4-Create_a_Project_with_manfiest-270x37.png 270w" sizes="(max-width: 616px) 100vw, 616px" layout="intrinsic"></amp-img></figure></li>
+<li>Select where to save project and New project has been created.<figure class="aligncenter amp-wp-cf340f6"><amp-img class="size-full wp-image-942 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/5_Project_Has_Been_Created.png" alt="" width="325" height="411" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/5_Project_Has_Been_Created.png 325w, http://www.forcelearn.com/wp-content/uploads/2019/02/5_Project_Has_Been_Created-237x300.png 237w, http://www.forcelearn.com/wp-content/uploads/2019/02/5_Project_Has_Been_Created-270x341.png 270w" sizes="(max-width: 325px) 100vw, 325px" layout="intrinsic"></amp-img></figure></li>
+</ol><h1><strong>Create Lightning Web Component</strong></h1>
+<ol><li>Type Shift+Ctrl+P and type SFDX:Create lightning Web Component <figure class="aligncenter amp-wp-84b4a37"><amp-img class="size-full wp-image-943 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component.png" alt="" width="621" height="92" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component.png 621w, http://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component-300x44.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component-370x55.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/6_Create_A_Lightning_Web_Component-270x40.png 270w" sizes="(max-width: 621px) 100vw, 621px" layout="intrinsic"></amp-img></figure></li>
+<li>And store location needs to be save and type name on your web Component<figure class="aligncenter amp-wp-b9ddc44"><amp-img class="size-full wp-image-944 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/7_Name_of_LWC.png" alt="" width="625" height="92" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC.png 625w, http://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC-300x44.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC-370x54.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/7_Name_of_LWC-270x40.png 270w" sizes="(max-width: 625px) 100vw, 625px" layout="intrinsic"></amp-img></figure></li>
+</ol><p>Lightning Web Component Contains 3 files .They are</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad10" id="quads-ad10" style="">
+</div>
+<ol><li>Html</li>
+<li>Javascriptfile</li>
+<li>JavaScriptMetafile</li>
+</ol><p><figure class="aligncenter amp-wp-6b90a9a"><amp-img class="size-full wp-image-945 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/8_LWC_Records.png" alt="" width="292" height="454" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/8_LWC_Records.png 292w, http://www.forcelearn.com/wp-content/uploads/2019/02/8_LWC_Records-193x300.png 193w, http://www.forcelearn.com/wp-content/uploads/2019/02/8_LWC_Records-270x420.png 270w" sizes="(max-width: 292px) 100vw, 292px" layout="intrinsic"></amp-img></figure></p>
+<p>You need to <strong>authorize</strong> your org to push code</p>
+<p>Type SFDX: Authorize dev hub</p>
+<p><figure class="aligncenter amp-wp-d328d33"><amp-img class="size-full wp-image-946 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/9_Authorize_Dev_hub.png" alt="" width="615" height="88" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub.png 615w, http://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub-300x43.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub-370x53.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/9_Authorize_Dev_hub-270x39.png 270w" sizes="(max-width: 615px) 100vw, 615px" layout="intrinsic"></amp-img></figure></p>
+<p>Default browser will open and login into your org with credentials</p>
+<p><figure class="aligncenter amp-wp-178b00b"><amp-img class="wp-image-947 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/10_Allow_CLI_org.png" alt="" width="294" height="394" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org.png 423w, http://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org-224x300.png 224w, http://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org-370x496.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/10_Allow_CLI_org-270x362.png 270w" sizes="(max-width: 294px) 100vw, 294px" layout="intrinsic"></amp-img></figure></p>
+<p>You are done with login.</p>
+<p><figure class="aligncenter amp-wp-6bbb41a"><amp-img class="size-full wp-image-948 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/11_DevHub_connected.png" alt="" width="714" height="139" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected.png 714w, http://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected-300x58.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected-370x72.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/11_DevHub_connected-270x53.png 270w" sizes="(max-width: 714px) 100vw, 714px" layout="intrinsic"></amp-img></figure></p>
+<p>Right Click on LWC and Select Deploy to Source Org.</p>
+<p><figure class="aligncenter amp-wp-713531b"><amp-img class="wp-image-949 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/12_Deploy_to_Source_Org.png" alt="" width="389" height="359" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org.png 509w, http://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org-300x277.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org-370x342.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org-270x249.png 270w, http://www.forcelearn.com/wp-content/uploads/2019/02/12_Deploy_to_Source_Org-325x300.png 325w" sizes="(max-width: 389px) 100vw, 389px" layout="intrinsic"></amp-img></figure></p>
+<p>Deployment of code is done successfully.</p>
+<p><figure class="aligncenter amp-wp-75cb26c"><amp-img class="size-full wp-image-950 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/13_Deployment_Done.png" alt="" width="1009" height="291" srcset="http://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done.png 1009w, http://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-300x87.png 300w, http://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-768x221.png 768w, http://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-370x107.png 370w, http://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-270x78.png 270w, http://www.forcelearn.com/wp-content/uploads/2019/02/13_Deployment_Done-740x213.png 740w" sizes="(max-width: 1009px) 100vw, 1009px" layout="intrinsic"></amp-img></figure></p>
+<p>open Command Palliate(Ctrl+shift=P) type SFDX: Open default org</p>
+<p>Navigate to Sales app and Home page</p>
+<p><figure class="aligncenter amp-wp-2c97317"><amp-img class="size-full wp-image-951 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/14_EditPage.png" alt="" width="247" height="199" layout="intrinsic"></amp-img></figure></p>
+<p>Click on Gear icon and edit page and Search for your web component and drag and drop into layout and click on Save.</p>
+<p><figure class="aligncenter amp-wp-ec84bd2"><amp-anim class="size-full wp-image-952 amp-wp-enforced-sizes" src="../../wp-content/uploads/2019/02/Demo-Of-Lightning-Web-Components.gif" alt="" width="472" height="368" layout="intrinsic"></amp-anim></figure></p>
+<p>Hurry !!!! you have designed your first Lightning Web Component.</p>
+<p>We have Designed Salesforce QA Application which contains lot of interview questions on Salesforce. provide your Feedback on application.</p>
+<p>Download: <a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank" rel="noopener"><strong>SalesforceQA</strong></a>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+</p><div class="quads-location quads-ad3" id="quads-ad3" style="">
+</div>
+<p>Please comments us for more updates and share to other to help.<br>
+Keep Visiting us for more updates<br>
+Like us for more updates<br>
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noreferrer noopener">ForceLearn</a><br>
+keep share to help others <amp-img class="emoji amp-wp-unknown-size amp-wp-unknown-width amp-wp-unknown-height amp-wp-enforced-sizes" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="🙂" width="770" height="400" layout="intrinsic"></amp-img> <amp-img class="emoji amp-wp-unknown-size amp-wp-unknown-width amp-wp-unknown-height amp-wp-enforced-sizes" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="🙂" width="770" height="400" layout="intrinsic"></amp-img> <amp-img class="emoji amp-wp-unknown-size amp-wp-unknown-width amp-wp-unknown-height amp-wp-enforced-sizes" draggable="false" src="https://s.w.org/images/core/emoji/11/svg/1f642.svg" alt="🙂" width="770" height="400" layout="intrinsic"></amp-img> .
+</p><div class="st-post-tags">
+Tags: <a href="../../tag/introduction-to-lwc/index.html" title="Introduction to LWC" rel="tag">Introduction to LWC</a>, <a href="../../tag/lightning-web-components-setup/index.html" title="Lightning Web Components setup" rel="tag">Lightning Web Components setup</a><br></div>
+</div>
+<footer class="amp-wp-article-footer">
+<div class="amp-wp-meta amp-wp-tax-category">
+Categories: <a href="../../category/lightning-web-components/index.html" rel="category tag">Lightning Web Components</a>	</div>
+<div class="amp-wp-meta amp-wp-tax-tag">
+Tags: <a href="../../tag/introduction-to-lwc/index.html" rel="tag">Introduction to LWC</a>, <a href="../../tag/lightning-web-components-setup/index.html" rel="tag">Lightning Web Components setup</a>	</div>
+<div class="amp-wp-meta amp-wp-comments-link">
+<a href="../index.html#respond">
+Leave a Comment		</a>
+</div>
+</footer>
+</article>
+<footer class="amp-wp-footer">
+<div>
+<h2>ForceLearn</h2>
+<p>
+<a href="https://wordpress.org/">
+Powered by WordPress			</a>
+</p>
+<a href="#top" class="back-to-top">Back to top</a>
+</div>
+</footer>
+</body>
+
+<!-- Mirrored from www.forcelearn.com/introduction-to-lightning-web-components-lwc-by-forcelearn/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:26:33 GMT -->
+</html><!-- WP Fastest Cache file was created in 2.05193996429 seconds, on 26-05-19 5:12:26 -->

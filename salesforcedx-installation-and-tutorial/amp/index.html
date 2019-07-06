@@ -1,0 +1,828 @@
+<!doctype html>
+<html amp lang="en-US">
+
+<!-- Mirrored from www.forcelearn.com/salesforcedx-installation-and-tutorial/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:31:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	    <script async custom-element="amp-ad" src="../../../cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    	<title>Learn SalesforceDX Installation and tutorial - ForceLearn</title>
+		<link rel="canonical" href="../index.html" />
+	<script type='text/javascript' src='../../../cdn.ampproject.org/v0.js' async></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"ForceLearn","logo":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2017\/11\/cropped-4416041-designstyle-boots-l-32x32.png","width":32,"height":32}},"@type":"BlogPosting","mainEntityOfPage":"https:\/\/www.forcelearn.com\/salesforcedx-installation-and-tutorial\/","headline":"Learn SalesforceDX Installation and tutorial","datePublished":"2017-11-27T06:38:43+00:00","dateModified":"2017-11-27T07:52:13+00:00","author":{"@type":"Person","name":"forcelearn"},"image":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2017\/11\/source-push.png","width":852,"height":218}}</script>
+	<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 770px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( ../../wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+		/* Inline stylesheets */
+:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-afc711b{background-color:#f4f4f4;font-family:"Courier 10 Pitch",Courier,monospace;font-size:13.6px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{margin-top:12px;margin-bottom:12px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-eb9d72f{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-fbb711c{font-size:12px;height:18px;line-height:18px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-6986ee0{min-height:16.8px;line-height:16.8px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-a0d0725{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-c86a462{font-size:12px;line-height:15px}:root:not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{-moz-tab-size:4;-o-tab-size:4;-webkit-tab-size:4;tab-size:4}:root:not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_):not(#_) .amp-wp-3c478ad{font-size:12px;line-height:15px}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.html">
+										<amp-img src="../../wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png" width="32" height="32" class="amp-wp-site-icon"></amp-img>
+						<span class="amp-site-title">
+				ForceLearn			</span>
+		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Learn SalesforceDX Installation and tutorial</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/bbfb2fb66335c9c0bad976a3a88dda85?s=24&amp;r=g" alt="forcelearn" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">forcelearn</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2017-11-27T06:38:43+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad6" id="quads-ad6" style="">
+
+</div>
+<p class="dpsp-share-text">Sharing is caring!</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad5" id="quads-ad5" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad10" id="quads-ad10" style="">
+
+</div>
+<div id="dpsp-content-top" class="dpsp-content-wrapper dpsp-shape-circle dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content "><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.forcelearn.com%2Fsalesforcedx-installation-and-tutorial%2F&amp;t=Learn+SalesforceDX+Installation+and+tutorial" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Learn+SalesforceDX+Installation+and+tutorial&amp;url=https%3A%2F%2Fwww.forcelearn.com%2Fsalesforcedx-installation-and-tutorial%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.forcelearn.com%2Fsalesforcedx-installation-and-tutorial%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="#" class="dpsp-network-btn dpsp-pinterest"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Pinterest</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.forcelearn.com%2Fsalesforcedx-installation-and-tutorial%2F&amp;title=Learn+SalesforceDX+Installation+and+tutorial&amp;mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div><p>Hello folks,</p>
+<p>Nice to see here again 🙂</p>
+<p>Today Iam happy to explain you about salesforceDX</p>
+<h1>What is salesforce DX ?</h1>
+<p>SalesforceDx is modern and easy way to built and access apps on force.com in entire life cycle. It contains great command-line interface (CLI) removes the complexity of working with your Salesforce<br>
+org for development, continuous integration, and delivery.</p>
+<h1>Steps to install salesforceDX</h1>
+<p>1. In order to access new salesforceDX you active devhub in your org or you need to create new developer org from below url</p>
+<p>login new org <a href="https://developer.salesforce.com/promotions/orgs/dx-signup" target="_blank" rel="noopener"> https://developer.salesforce.com/promotions/orgs/dx-signup</a></p>
+<p>2. Install the CLI using the links below based on your operating system .</p>
+<p>Operating System Link to Installer<br>
+macOS                                  <a href="https://sfdc.co/sfdx_cli_osx" target="_blank" rel="noopener"> https://sfdc.co/sfdx_cli_osx</a><br>
+Windows 32-bit                  <a href="https://sfdc.co/sfdx_cli_win" target="_blank" rel="noopener">https://sfdc.co/sfdx_cli_win</a><br>
+Windows 64-bit                  <a href="https://sfdc.co/sfdx_cli_win64" target="_blank" rel="noopener">https://sfdc.co/sfdx_cli_win64</a><br>
+Debian/Ubuntu 64            <a href="https://sfdc.co/sfdx_cli_linux" target="_blank" rel="noopener">https://sfdc.co/sfdx_cli_linux</a><br>
+Debian/Ubuntu x86         <a href="https://sfdc.co/sfdx_cli_linux_x86" target="_blank" rel="noopener"> https://sfdc.co/sfdx_cli_linux_x86</a></p>
+<p>3. after download install file and run it open, with above package with predefined gitbash also installed in your org</p>
+<p>4. open gitbash and click</p>
+<p><span class="amp-wp-afc711b">$ sfdx</span></p>
+<p><amp-img class="size-full wp-image-278 alignnone amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/1sfdx.png" alt="" width="429" height="126" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/1sfdx.png 429w, https://www.forcelearn.com/wp-content/uploads/2017/11/1sfdx-300x88.png 300w" sizes="(max-width: 429px) 100vw, 429px" layout="intrinsic"></amp-img><!-- WP QUADS Content Ad Plugin v. 1.8.2 --></p><div class="quads-location quads-ad7" id="quads-ad7" style="">
+
+</div>
+
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6be3491263809" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6be3491263809-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6be3491263809-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p><amp-img class="alignleft size-full wp-image-282 amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/sfdx-force.png" alt="" width="979" height="436" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force.png 979w, https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force-300x134.png 300w, https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force-768x342.png 768w" sizes="(max-width: 979px) 100vw, 979px" layout="intrinsic"></amp-img></p>
+<p> </p>
+<p> </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c05553958127" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force -- help</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c05553958127-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c05553958127-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-v">help</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p><amp-img class="size-full wp-image-284 alignnone amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/sfdx-force-help.png" alt="" width="627" height="403" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force-help.png 627w, https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force-help-300x193.png 300w" sizes="(max-width: 627px) 100vw, 627px" layout="intrinsic"></amp-img></p>
+<p>5. Connect your salesforce org</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c1a791961718" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+ sfdx force:auth:web:login
+// it will open browser and provide your DX org credits and make that org as default org
+ sfdx force:auth:web:login--your@dx.com --setdefaultdevhubusername</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c1a791961718-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2417a6c1a791961718-2">2</div><div class="crayon-num" data-line="crayon-5cea2417a6c1a791961718-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c1a791961718-1"><span class="crayon-h"> </span><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">auth</span><span class="crayon-o">:</span><span class="crayon-v">web</span><span class="crayon-o">:</span><span class="crayon-v">login</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2417a6c1a791961718-2"><span class="crayon-c">// it will open browser and provide your DX org credits and make that org as default org</span></div><div class="crayon-line" id="crayon-5cea2417a6c1a791961718-3"><span class="crayon-h"> </span><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">auth</span><span class="crayon-o">:</span><span class="crayon-v">web</span><span class="crayon-o">:</span><span class="crayon-v">login</span><span class="crayon-o">--</span><span class="crayon-v">your</span><span class="crayon-sy">@</span><span class="crayon-v">dx</span><span class="crayon-sy">.</span><span class="crayon-v">com</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-v">setdefaultdevhubusername</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p><amp-img class="size-full wp-image-294 alignnone amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/sfdx-force-auth.png" alt="" width="565" height="60" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force-auth.png 565w, https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force-auth-300x32.png 300w" sizes="(max-width: 565px) 100vw, 565px" layout="intrinsic"></amp-img></p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad3" id="quads-ad3" style="">
+
+</div>
+
+<p>6. login into org provide credentials</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c26328359935" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+ sfdx force:org:list</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c26328359935-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c26328359935-1"><span class="crayon-h"> </span><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">list</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p><amp-img class="size-full wp-image-295 alignnone amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/sfdx-force-org-list.png" alt="" width="728" height="146" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force-org-list.png 728w, https://www.forcelearn.com/wp-content/uploads/2017/11/sfdx-force-org-list-300x60.png 300w" sizes="(max-width: 728px) 100vw, 728px" layout="intrinsic"></amp-img></p>
+<p>7. Create a new project in your local system</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c42415823751" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:project:create -n NEW Project Name</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c42415823751-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c42415823751-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">project</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">n</span><span class="crayon-h"> </span><span class="crayon-r">NEW</span><span class="crayon-h"> </span><span class="crayon-e">Project </span><span class="crayon-v">Name</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p><amp-img class="size-full wp-image-287 alignnone amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/Create-New-DXproject.png" alt="" width="393" height="85" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/Create-New-DXproject.png 393w, https://www.forcelearn.com/wp-content/uploads/2017/11/Create-New-DXproject-300x65.png 300w" sizes="(max-width: 393px) 100vw, 393px" layout="intrinsic"></amp-img></p>
+<p>8. open folder and open code console</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c53112806912" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+ cd New Folder
+
+code .</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c53112806912-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5cea2417a6c53112806912-2">2</div><div class="crayon-num" data-line="crayon-5cea2417a6c53112806912-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c53112806912-1"><span class="crayon-h"> </span><span class="crayon-e">cd </span><span class="crayon-r">New</span><span class="crayon-h"> </span><span class="crayon-e">Folder</span></div><div class="crayon-line crayon-striped-line" id="crayon-5cea2417a6c53112806912-2"> </div><div class="crayon-line" id="crayon-5cea2417a6c53112806912-3"><span class="crayon-i">code</span><span class="crayon-h"> </span><span class="crayon-sy">.</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p>need to download form this link <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">visual studio code</a> and add <a href="https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode" target="_blank" rel="noopener">Salesforce Extensions for VS Code</a> too</p>
+<p>9. To create new lighting component in our local org and  force-app\main\default\aura is repository where we need to store our new lightning component</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c65591676134" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:lightning:component:create -n myDXcomp -d force-app\main\default\aura</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c65591676134-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c65591676134-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">lightning</span><span class="crayon-o">:</span><span class="crayon-v">component</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">n</span><span class="crayon-h"> </span><span class="crayon-v">myDXcomp</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">d</span><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">-</span><span class="crayon-v">app</span><span class="crayon-sy">\</span><span class="crayon-v">main</span><span class="crayon-sy">\</span><span class="crayon-st">default</span><span class="crayon-sy">\</span><span class="crayon-v">aura</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p><amp-img class="alignleft size-full wp-image-291 amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/my-DXlightning-component.png" alt="" width="983" height="376" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/my-DXlightning-component.png 983w, https://www.forcelearn.com/wp-content/uploads/2017/11/my-DXlightning-component-300x115.png 300w, https://www.forcelearn.com/wp-content/uploads/2017/11/my-DXlightning-component-768x294.png 768w" sizes="(max-width: 983px) 100vw, 983px" layout="intrinsic"></amp-img></p>
+<p>10. create a new apex class</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c76593490052" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+ sfdx force:apex:class:create -n DXclass -d force-app\main\default\aura</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c76593490052-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c76593490052-1"><span class="crayon-h"> </span><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">apex</span><span class="crayon-o">:</span><span class="crayon-t">class</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">n</span><span class="crayon-h"> </span><span class="crayon-v">DXclass</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">d</span><span class="crayon-h"> </span><span class="crayon-v">force</span><span class="crayon-o">-</span><span class="crayon-v">app</span><span class="crayon-sy">\</span><span class="crayon-v">main</span><span class="crayon-sy">\</span><span class="crayon-st">default</span><span class="crayon-sy">\</span><span class="crayon-v">aura</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p>11. push code into org</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c86446822348" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:source:push</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c86446822348-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c86446822348-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">push</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p><amp-img class="alignleft size-full wp-image-292 amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/push-error.png" alt="" width="922" height="39" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/push-error.png 922w, https://www.forcelearn.com/wp-content/uploads/2017/11/push-error-300x13.png 300w, https://www.forcelearn.com/wp-content/uploads/2017/11/push-error-768x32.png 768w" sizes="(max-width: 922px) 100vw, 922px" layout="intrinsic"></amp-img></p>
+<p>12 In order to push you need to create a default dev org</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6c97567899347" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:config:set defaultdevhubusername=your@dx.com</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6c97567899347-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6c97567899347-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">config</span><span class="crayon-o">:</span><span class="crayon-e">set </span><span class="crayon-v">defaultdevhubusername</span><span class="crayon-o">=</span><span class="crayon-v">your</span><span class="crayon-sy">@</span><span class="crayon-v">dx</span><span class="crayon-sy">.</span><span class="crayon-v">com</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p><amp-img class="size-full wp-image-288 alignnone amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/deafultuserorg-creation.png" alt="" width="727" height="100" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/deafultuserorg-creation.png 727w, https://www.forcelearn.com/wp-content/uploads/2017/11/deafultuserorg-creation-300x41.png 300w" sizes="(max-width: 727px) 100vw, 727px" layout="intrinsic"></amp-img></p>
+<p>13. Next push code into dev org need to create a strach org</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6ca8476170789" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:org:create -s -f config\project-scratch-def.json</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6ca8476170789-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6ca8476170789-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">s</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">f</span><span class="crayon-h"> </span><span class="crayon-v">config</span><span class="crayon-sy">\</span><span class="crayon-v">project</span><span class="crayon-o">-</span><span class="crayon-v">scratch</span><span class="crayon-o">-</span><span class="crayon-v">def</span><span class="crayon-sy">.</span><span class="crayon-v">json</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p><amp-img class="alignleft size-full wp-image-293 amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/scratch-org-creation.png" alt="" width="745" height="57" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/scratch-org-creation.png 745w, https://www.forcelearn.com/wp-content/uploads/2017/11/scratch-org-creation-300x23.png 300w" sizes="(max-width: 745px) 100vw, 745px" layout="intrinsic"></amp-img></p>
+<p>14 . try to push again</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6cb9121013318" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+ sfdx force:source:push</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6cb9121013318-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6cb9121013318-1"><span class="crayon-h"> </span><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">push</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p><amp-img class="alignleft size-full wp-image-298 amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/source-push.png" alt="" width="852" height="218" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/source-push.png 852w, https://www.forcelearn.com/wp-content/uploads/2017/11/source-push-300x77.png 300w, https://www.forcelearn.com/wp-content/uploads/2017/11/source-push-768x197.png 768w" sizes="(max-width: 852px) 100vw, 852px" layout="intrinsic"></amp-img></p>
+<p>15. to open org</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5cea2417a6cca216113686" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+ sfdx force:org:open</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6cca216113686-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6cca216113686-1"><span class="crayon-h"> </span><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">org</span><span class="crayon-o">:</span><span class="crayon-v">open</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p><amp-img class="alignleft size-full wp-image-289 amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/force-org-open.png" alt="" width="1083" height="52" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/force-org-open.png 1083w, https://www.forcelearn.com/wp-content/uploads/2017/11/force-org-open-300x14.png 300w, https://www.forcelearn.com/wp-content/uploads/2017/11/force-org-open-768x37.png 768w, https://www.forcelearn.com/wp-content/uploads/2017/11/force-org-open-1024x49.png 1024w" sizes="(max-width: 1083px) 100vw, 1083px" layout="intrinsic"></amp-img></p>
+<p> </p>
+<p><amp-img class="alignleft size-full wp-image-290 amp-wp-enforced-sizes" src="../../wp-content/uploads/2017/11/Lightning-component.png" alt="" width="951" height="155" srcset="https://www.forcelearn.com/wp-content/uploads/2017/11/Lightning-component.png 951w, https://www.forcelearn.com/wp-content/uploads/2017/11/Lightning-component-300x49.png 300w, https://www.forcelearn.com/wp-content/uploads/2017/11/Lightning-component-768x125.png 768w" sizes="(max-width: 951px) 100vw, 951px" layout="intrinsic"></amp-img><!-- WP QUADS Content Ad Plugin v. 1.8.2 --></p><div class="quads-location quads-ad4" id="quads-ad4" style="">
+
+</div>
+
+<p>16. to know status<br><!-- Crayon Syntax Highlighter v_2.7.2_beta --></p><div id="crayon-5cea2417a6cdb788484858" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:source:status</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6cdb788484858-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6cdb788484858-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">status</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<br>
+17. to know changes made on your org<br><!-- Crayon Syntax Highlighter v_2.7.2_beta --><div id="crayon-5cea2417a6d19834422241" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+ sfdx force:source:pull</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6d19834422241-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6d19834422241-1"><span class="crayon-h"> </span><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">source</span><span class="crayon-o">:</span><span class="crayon-v">pull</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<br>
+18. assign permission to scratch org users<br><!-- Crayon Syntax Highlighter v_2.7.2_beta --><div id="crayon-5cea2417a6d2c431085606" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+ sfdx force:user:permset:assign -n</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6d2c431085606-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6d2c431085606-1"><span class="crayon-h"> </span><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">user</span><span class="crayon-o">:</span><span class="crayon-v">permset</span><span class="crayon-o">:</span><span class="crayon-v">assign</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">n</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<br>
+19.  To run test classes on salesforceDX<br><!-- Crayon Syntax Highlighter v_2.7.2_beta --><div id="crayon-5cea2417a6d4a467942042" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:apex:test:run -r human</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6d4a467942042-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6d4a467942042-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">apex</span><span class="crayon-o">:</span><span class="crayon-v">test</span><span class="crayon-o">:</span><span class="crayon-v">run</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">r</span><span class="crayon-h"> </span><span class="crayon-v">human</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<br>
+21 create a new project<br><!-- Crayon Syntax Highlighter v_2.7.2_beta --><div id="crayon-5cea2417a6d54329019395" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+sfdx force:project:create -n projectname myDXproject --defaultpackagedir dh-app</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6d54329019395-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6d54329019395-1"><span class="crayon-e">sfdx </span><span class="crayon-v">force</span><span class="crayon-o">:</span><span class="crayon-v">project</span><span class="crayon-o">:</span><span class="crayon-v">create</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">n</span><span class="crayon-h"> </span><span class="crayon-e">projectname </span><span class="crayon-v">myDXproject</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-e">defaultpackagedir </span><span class="crayon-v">dh</span><span class="crayon-o">-</span><span class="crayon-v">app</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<br>
+23 tree is used find structure<br><!-- Crayon Syntax Highlighter v_2.7.2_beta --><div id="crayon-5cea2417a6d5e960065728" class="crayon-syntax crayon-theme-sublime-text crayon-font-monaco crayon-os-pc print-yes notranslate amp-wp-eb9d72f" data-settings=" minimize scroll-mouseover">
+		
+			<div class="crayon-toolbar amp-wp-fbb711c" data-settings=" mouseover overlay hide delay"><span class="crayon-title"></span>
+			<div class="crayon-tools amp-wp-fbb711c"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info amp-wp-6986ee0"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no amp-wp-a0d0725" data-settings="dblclick" readonly>
+tree</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table"><tr class="crayon-row"><td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content amp-wp-c86a462"><div class="crayon-num" data-line="crayon-5cea2417a6d5e960065728-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre amp-wp-3c478ad"><div class="crayon-line" id="crayon-5cea2417a6d5e960065728-1"><span class="crayon-v">tree</span></div></div></td>
+					</tr></table></div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<br>
+Happy coding … Thanks for visiting us.<br>
+Keep visiting us for more updates and share to help others
+No tags for this post.	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="../../category/uncategorized/blog/index.html" rel="category tag">Blog</a>	</div>
+
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>ForceLearn</h2>
+		<p>
+			<a href="https://wordpress.org/">
+				Powered by WordPress			</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+
+<!-- Mirrored from www.forcelearn.com/salesforcedx-installation-and-tutorial/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:31:06 GMT -->
+</html>

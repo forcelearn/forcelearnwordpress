@@ -1,0 +1,533 @@
+<!doctype html>
+<html amp lang="en-US">
+
+<!-- Mirrored from www.forcelearn.com/learn-git-basics-for-salesforce-developers/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:30:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	    <script async custom-element="amp-ad" src="../../../cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    	<title>Learn Git Basis for Salesforce Developers - ForceLearn</title>
+		<link rel="canonical" href="../index.html" />
+	<script type='text/javascript' src='../../../cdn.ampproject.org/v0.js' async></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"ForceLearn","logo":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2017\/11\/cropped-4416041-designstyle-boots-l-32x32.png","width":32,"height":32}},"@type":"BlogPosting","mainEntityOfPage":"https:\/\/www.forcelearn.com\/learn-git-basics-for-salesforce-developers\/","headline":"Learn Git Basics for Salesforce Developers","datePublished":"2018-01-29T19:27:46+00:00","dateModified":"2018-02-01T16:54:02+00:00","author":{"@type":"Person","name":"forcelearn"},"image":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2018\/01\/Create-new-repository-up.png","width":1152,"height":781}}</script>
+	<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 770px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( ../../wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+			</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.html">
+										<amp-img src="../../wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png" width="32" height="32" class="amp-wp-site-icon"></amp-img>
+						<span class="amp-site-title">
+				ForceLearn			</span>
+		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Learn Git Basics for Salesforce Developers</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/bbfb2fb66335c9c0bad976a3a88dda85?s=24&amp;r=g" alt="forcelearn" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">forcelearn</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-01-29T19:27:46+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	
+	<div class="amp-wp-article-content">
+		
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad10" id="quads-ad10" style="">
+
+</div>
+<p class="dpsp-share-text">Sharing is caring!</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad4" id="quads-ad4" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad6" id="quads-ad6" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad7" id="quads-ad7" style="">
+
+</div>
+<div id="dpsp-content-top" class="dpsp-content-wrapper dpsp-shape-circle dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content "><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.forcelearn.com%2Flearn-git-basics-for-salesforce-developers%2F&amp;t=Learn+Git+Basics+for+Salesforce+Developers" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Learn+Git+Basics+for+Salesforce+Developers&amp;url=https%3A%2F%2Fwww.forcelearn.com%2Flearn-git-basics-for-salesforce-developers%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.forcelearn.com%2Flearn-git-basics-for-salesforce-developers%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="#" class="dpsp-network-btn dpsp-pinterest"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Pinterest</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.forcelearn.com%2Flearn-git-basics-for-salesforce-developers%2F&amp;title=Learn+Git+Basics+for+Salesforce+Developers&amp;mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div><h1>Learn Git Basics  for Developers</h1>
+<h4>what is Git ?</h4>
+<p>Git is a version control system where you can store you source code in git repository. you can track changed made on your code compared with previous code.</p>
+<h4>what is workflow in git ?</h4>
+<p>They are working directory , staging and git repository.<br>
+In working directory is nothing but you local system,where you can build,modify your code.<br>
+In Staging, Then you can move code into staging area.In order to move files we use commit operation<br>
+In git repository,By using push command we can move source code from local repository to git repository</p>
+<h4>How to install git in local system ?</h4>
+<p>1. open <a href="http://swiftation.com/52Np" target="_blank" rel="noopener">click here</a> to download<br>
+2. click on your operation type (Ex: I click on windows then it start downloading these git.exe file)<br>
+3. After downloading click on double click on it.<br>
+4.Install it<br>
+5. Now you sucessfully installed git in our local system.</p>
+<h3>Register a account in Github</h3>
+<p>register to create new account in github with below link. If you have already a git account then login into it.<br>
+https://github.com/ click on register or login .</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="">
+
+</div>
+
+<p>Create new repository like image below</p>
+<p><amp-img class="alignleft size-full wp-image-478 amp-wp-enforced-sizes" src="../../wp-content/uploads/2018/01/Create-new-repository-up.png" alt="" width="1152" height="781" srcset="https://www.forcelearn.com/wp-content/uploads/2018/01/Create-new-repository-up.png 1152w, https://www.forcelearn.com/wp-content/uploads/2018/01/Create-new-repository-up-300x203.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/01/Create-new-repository-up-768x521.png 768w, https://www.forcelearn.com/wp-content/uploads/2018/01/Create-new-repository-up-1024x694.png 1024w, https://www.forcelearn.com/wp-content/uploads/2018/01/Create-new-repository-up-120x80.png 120w" sizes="(max-width: 1152px) 100vw, 1152px" layout="intrinsic"></amp-img><!-- WP QUADS Content Ad Plugin v. 1.8.2 --></p><div class="quads-location quads-ad3" id="quads-ad3" style="">
+
+</div>
+
+
+<p> </p>
+<p>Click on Create Repository.</p>
+<p><amp-img class="alignleft size-full wp-image-479 amp-wp-enforced-sizes" src="../../wp-content/uploads/2018/01/Git-dashboard-up.png" alt="" width="1509" height="797" srcset="https://www.forcelearn.com/wp-content/uploads/2018/01/Git-dashboard-up.png 1509w, https://www.forcelearn.com/wp-content/uploads/2018/01/Git-dashboard-up-300x158.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/01/Git-dashboard-up-768x406.png 768w, https://www.forcelearn.com/wp-content/uploads/2018/01/Git-dashboard-up-1024x541.png 1024w" sizes="(max-width: 1509px) 100vw, 1509px" layout="intrinsic"></amp-img></p>
+<p>You have created a new repository in GitHub</p>
+<h4>How to use gitbash ?</h4>
+<p>After installing ,Click on gitbash icon on you desktop and double click on it .<br>
+It will open a graphical interface to like below image</p>
+<p>Type : git version<br>
+to check which version of git installed in your local machine and it tells that git installed properly in your local machine<br>
+pwd — it is used to directory path</p>
+<p>mkdir Name — create directory with Name</p>
+<p>cd Name — To enter into Name</p>
+<p>Git configuration (username and password)</p>
+<p>git config –global user.name “Bhanu ”<br>
+git config –global user.email”bhanu@gmail.com”</p>
+<p>git config –global –list</p>
+<p>To find user name and email id</p>
+<h3>How to clone repository from github to your system ?</h3>
+<p>git clone https://gihub.com/XXXXXXXX // To clone</p>
+<p>git status (to know status)</p>
+<p>echo ” Test Git file” &gt;&gt;start.txt // to create a new file in local</p>
+<p>git add start.txt / to add file4</p>
+<p>git status .. ///to know files in local folder</p>
+<p>git commit -m “Adding start text file ”</p>
+<p>git push origin master // to add into server</p>
+<p>git init name // create a folder</p>
+<p>mate file name</p>
+<p>git add . // to add all files in folder</p>
+<p>rm -rf .git // to remove .git folder<br>
+rm -rf name of folder // to remove project</p>
+<p>Get all cheat sheet for <a href="http://swiftation.com/531I" target="_blank" rel="noopener">github</a> in pdf 🙂
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+</p><div class="quads-location quads-ad5" id="quads-ad5" style="">
+
+</div>
+
+<p>Please comments us for more updates and share to other to help.<br>
+Keep Visiting us for more updates<br>
+Like us for more updates<br>
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br>
+keep share to help others  🙂 🙂 🙂
+
+	</p><div class="st-post-tags">
+	Tags: <a href="../../tag/git/index.html" title="Git" rel="tag">Git</a><br></div>
+
+	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="../../category/uncategorized/blog/index.html" rel="category tag">Blog</a>	</div>
+
+	<div class="amp-wp-meta amp-wp-tax-tag">
+		Tags: <a href="../../tag/git/index.html" rel="tag">Git</a>	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>ForceLearn</h2>
+		<p>
+			<a href="https://wordpress.org/">
+				Powered by WordPress			</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+
+<!-- Mirrored from www.forcelearn.com/learn-git-basics-for-salesforce-developers/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:30:32 GMT -->
+</html>

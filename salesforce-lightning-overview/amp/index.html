@@ -1,0 +1,509 @@
+<!doctype html>
+<html amp lang="en-US">
+
+<!-- Mirrored from www.forcelearn.com/salesforce-lightning-overview/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:29:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	    <script async custom-element="amp-ad" src="../../../cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    	<title>Salesforce Lightning Overview | ForceLearn</title>
+		<link rel="canonical" href="../index.html" />
+	<script type='text/javascript' src='../../../cdn.ampproject.org/v0.js' async></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic"><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>	<script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"ForceLearn","logo":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2017\/11\/cropped-4416041-designstyle-boots-l-32x32.png","width":32,"height":32}},"@type":"BlogPosting","mainEntityOfPage":"https:\/\/www.forcelearn.com\/salesforce-lightning-overview\/","headline":"Salesforce Lightning Overview","datePublished":"2018-03-26T07:16:15+00:00","dateModified":"2018-03-26T07:16:15+00:00","author":{"@type":"Person","name":"forcelearn"},"image":{"@type":"ImageObject","url":"https:\/\/www.forcelearn.com\/wp-content\/uploads\/2018\/03\/Salesforce-Lightning-Overview.png","width":1280,"height":720}}</script>
+	<meta name="generator" content="AMP Plugin v1.0.2; mode=classic">	<style amp-custom>
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.amp-wp-enforced-sizes {
+	/** Our sizes fallback is 100vw, and we have a padding on the container; the max-width here prevents the element from overflowing. **/
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	/** Worst case scenario when we can't figure out dimensions for an image. **/
+	/** Force the image into a box of fixed dimensions and use object-fit to scale. **/
+	object-fit: contain;
+}
+
+/* Template Styles */
+
+.amp-wp-content,
+.amp-wp-title-bar div {
+		margin: 0 auto;
+	max-width: 770px;
+	}
+
+html {
+	background: #0a89c0;
+}
+
+body {
+	background: #fff;
+	color: #353535;
+	font-family: 'Merriweather', 'Times New Roman', Times, Serif;
+	font-weight: 300;
+	line-height: 1.75em;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: #0a89c0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #353535;
+}
+
+/* Quotes */
+
+blockquote {
+	color: #353535;
+	background: rgba(127,127,127,.125);
+	border-left: 2px solid #0a89c0;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* UI Fonts */
+
+.amp-wp-meta,
+.amp-wp-header div,
+.amp-wp-title,
+.wp-caption-text,
+.amp-wp-tax-category,
+.amp-wp-tax-tag,
+.amp-wp-comments-link,
+.amp-wp-footer p,
+.back-to-top {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #0a89c0;
+}
+
+.amp-wp-header div {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: .875em 16px;
+	position: relative;
+}
+
+.amp-wp-header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Site Icon */
+
+.amp-wp-header .amp-wp-site-icon {
+	/** site icon is 32px **/
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+}
+
+/* Article */
+
+.amp-wp-article {
+	color: #353535;
+	font-weight: 400;
+	margin: 1.5em auto;
+	max-width: 840px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1.5em 16px 0;
+}
+
+.amp-wp-title {
+	color: #353535;
+	display: block;
+	flex: 1 0 100%;
+	font-weight: 900;
+	margin: 0 0 .625em;
+	width: 100%;
+}
+
+/* Article Meta */
+
+.amp-wp-meta {
+	color: #696969;
+	display: inline-block;
+	flex: 2 1 50%;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #0a89c0;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+
+.amp-wp-article-content {
+	margin: 0 16px;
+}
+
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content .wp-caption {
+	max-width: 100%;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #c2c2c2;
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-carousel {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #c2c2c2;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #c2c2c2 url( ../../wp-content/plugins/amp/assets/images/placeholder-icon.png) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 1.5em 16px;
+}
+
+.amp-wp-comments-link {
+	color: #696969;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 2.25em 0 1.5em;
+}
+
+.amp-wp-comments-link a {
+	border-style: solid;
+	border-color: #c2c2c2;
+	border-width: 1px 1px 2px;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #0a89c0;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	border-top: 1px solid #c2c2c2;
+	margin: calc(1.5em - 1px) 0 0;
+}
+
+.amp-wp-footer div {
+	margin: 0 auto;
+	max-width: calc(840px - 32px);
+	padding: 1.25em 16px 1.25em;
+	position: relative;
+}
+
+.amp-wp-footer h2 {
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 0 0 .5em;
+}
+
+.amp-wp-footer p {
+	color: #696969;
+	font-size: .8em;
+	line-height: 1.5em;
+	margin: 0 85px 0 0;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+}
+
+.back-to-top {
+	bottom: 1.275em;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 2em;
+	position: absolute;
+	right: 16px;
+}
+			</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.html">
+										<amp-img src="../../wp-content/uploads/2017/11/cropped-4416041-designstyle-boots-l-32x32.png" width="32" height="32" class="amp-wp-site-icon"></amp-img>
+						<span class="amp-site-title">
+				ForceLearn			</span>
+		</a>
+	</div>
+</header>
+
+<article class="amp-wp-article">
+	<header class="amp-wp-article-header">
+		<h1 class="amp-wp-title">Salesforce Lightning Overview</h1>
+			<div class="amp-wp-meta amp-wp-byline">
+					<amp-img src="https://secure.gravatar.com/avatar/bbfb2fb66335c9c0bad976a3a88dda85?s=24&amp;r=g" alt="forcelearn" width="24" height="24" layout="fixed"></amp-img>
+				<span class="amp-wp-author author vcard">forcelearn</span>
+	</div>
+<div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2018-03-26T07:16:15+00:00">
+		1 year ago	</time>
+</div>
+	</header>
+
+	<figure class="amp-wp-article-featured-image wp-caption">
+	<amp-img width="770" height="433" src="../../wp-content/uploads/2018/03/Salesforce-Lightning-Overview-1024x576.png" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="" srcset="https://www.forcelearn.com/wp-content/uploads/2018/03/Salesforce-Lightning-Overview-1024x576.png 1024w, https://www.forcelearn.com/wp-content/uploads/2018/03/Salesforce-Lightning-Overview-300x169.png 300w, https://www.forcelearn.com/wp-content/uploads/2018/03/Salesforce-Lightning-Overview-768x432.png 768w, https://www.forcelearn.com/wp-content/uploads/2018/03/Salesforce-Lightning-Overview-370x208.png 370w, https://www.forcelearn.com/wp-content/uploads/2018/03/Salesforce-Lightning-Overview-270x152.png 270w, https://www.forcelearn.com/wp-content/uploads/2018/03/Salesforce-Lightning-Overview-740x416.png 740w, https://www.forcelearn.com/wp-content/uploads/2018/03/Salesforce-Lightning-Overview.png 1280w" sizes="(max-width: 770px) 100vw, 770px" layout="intrinsic"></amp-img>	</figure>
+
+	<div class="amp-wp-article-content">
+		
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad10" id="quads-ad10" style="">
+
+</div>
+<p class="dpsp-share-text">Sharing is caring!</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad7" id="quads-ad7" style="">
+
+</div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad5" id="quads-ad5" style="">
+
+</div>
+<div id="dpsp-content-top" class="dpsp-content-wrapper dpsp-shape-circle dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content "><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.forcelearn.com%2Fsalesforce-lightning-overview%2F&amp;t=Salesforce+Lightning+Overview" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Salesforce+Lightning+Overview&amp;url=https%3A%2F%2Fwww.forcelearn.com%2Fsalesforce-lightning-overview%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.forcelearn.com%2Fsalesforce-lightning-overview%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="#" class="dpsp-network-btn dpsp-pinterest"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Pinterest</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.forcelearn.com%2Fsalesforce-lightning-overview%2F&amp;title=Salesforce+Lightning+Overview&amp;mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-icon"></span><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div><h1><strong>Salesforce Lightning Overview</strong></h1>
+<p>Salesforce Lightning is the latest offering by Salesforce, directed at organizations hoping to connect with potential leads utilizing various channels. Salesforce, now synonymous with the term CRM, has raised client experience to an unheard of level through Salesforce lightning. Its basic role is to give a certifiable CRM experience to quicken reception and incentive for every client of Salesforce too its end clients. Leads can encounter very nearly coordinated tweaked individual discussions with the organization, giving them an extremely valuable feeling of confirmation that the organization is really worried about them.</p>
+<p>The Salesforce Lightning stage is the consequence of a consuming need to make a straightforward yet smooth outline that improves client encounter. Albeit at first planned just for cell phones, the work area rendition was additionally brought under its ambit after the foundation of the outline system and finishing of the versatile application.</p>
+<p><strong>What’s new in Salesforce Lightning</strong></p>
+<p><strong>Activity Feed</strong></p>
+<p>Monitor every one of the intricate details of your business pipe. The movement nourish keeps you refreshed on the advance of a record, alongside the important information expected to make vital move.</p>
+<p><strong>Contextual Hovers</strong></p>
+<p>Why make the extra stride of going to every client record to check what’s happening inside? Basically drift over each record, and you will get the essential bits of knowledge you require on every client.</p>
+<p><strong>Opportunity Board</strong></p>
+<p>On the off chance that you are a business proficient or ever were a business proficient, odds are you would have remained up hours together, trusting there were some way you could see the whole pipeline in one swoop. The open door board that comes packaged with the Salesforce Lightning does only that. Drag-Drop bargains crosswise over stages consequently refreshing your estimates, enabling you to progressively design and picture your subsequent stage ahead of time.</p>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+<div class="quads-location quads-ad6" id="quads-ad6" style="">
+
+</div>
+
+<h1><strong>What’s in store for your organization?</strong></h1>
+<p><strong>Updated UI</strong></p>
+<p>A great deal of Salesforce veterans guarantee that the Lightning Experience just conveys another UI to a decent antiquated CRM. Be that as it may, the expanded advantages to your business pipe are definitely not antiquated.</p>
+<p>Items are covered up and can be gotten to utilizing collapsible route. This arranges for space on the dashboard, making for a refined ordeal</p>
+<p>Notes are spared consequently and can be connected to different records. Additionally, you now can add rich-content alternatives to your notes.</p>
+<p><strong>Customizable Home Page</strong></p>
+<p>Long gone are the static landing pages on your case. Everything is adaptable, up to the last detail. An adjustable landing page enables your business experts to more things around the way it suits them. Alongside an adaptable landing page, the Salesforce right hand enables clients to distinguish and monitor all their every day duties.</p>
+<p><strong>Brilliant View</strong></p>
+<p>Out-of-the-container sees clearly comprise of investigation, yet additionally recall the recurrence at which the perspectives are gotten to also the trouble in acquiring one such perspectives or formats. Clients will, now observe data on their dashboard which is most applicable to them, conveying data that is most important, and sifting through perspectives which aren’t gotten to such an extent.</p>
+<p><strong>Three columns no more</strong></p>
+<p>Finally; Salesforce at last appears to have regarded rehashed requires a conclusion to the oppression of the three sections. Already, the quantity of sections on your dashboard, which viably meant the quantity of perspectives you could have on your screen at any given time, were constrained. Salesforce Lightning can produce in excess of three sections, as well as these segments are currently energized! They revive intermittently, continually demonstrating to you the latest information and figures, engaging your business group to settle on precise information driven choices.</p>
+<p><strong>Simplified your approach to progress</strong></p>
+<p>The phase at which an open door is can in a split second be refreshed by basically moving exchanges from either an icy prompt lead in the channel or any such change. Figures and estimates are additionally refreshed promptly, giving you an elevated perspective of your association.</p>
+<p>seek salesforce examination</p>
+<h1>In what manner will prepared Salesforce clients be influenced?</h1>
+<p>The Salesforce Lightning was discharged mid 2016 and has at long last taken its full shape and quality, however have you arranged with reference to how your association is going to gradually introduced? Salesforce administrators have finish control over the taking off of the new Salesforce Lightning at the association, profile and even client level.</p>
+<p>Test and ensure lightning works for you, with any Visualforce application composed by you before. Break down your business forms and assess how Salesforce Lightning will fit into your present activities.</p>
+<p>For engineers who wish to make new Lightning parts, the Lightning application developer and the Lightning outline framework alongside Visualforce empower you to make applications at the snap of a finger, with a look and feel that is both current and delightful.</p>
+<p>I began to look all starry eyed at Lightning. Presently it’s your turn.</p>
+<p><a href="http://www.standav.com/blog/salesforce-lightning-whats-new-and-what-it-means-for-you/" target="_blank" rel="noopener">Click here to see more</a>
+<!-- WP QUADS Content Ad Plugin v. 1.8.2 -->
+</p><div class="quads-location quads-ad2" id="quads-ad2" style="">
+
+</div>
+
+<p>Please comments us for more updates and share to other to help.<br>
+Keep Visiting us for more updates<br>
+Like us for more updates<br>
+Fb Page : <a href="https://www.facebook.com/ForceLearncom-153109022100342/" target="_blank" rel="noopener">ForceLearn</a><br>
+keep share to help others  🙂 🙂 🙂
+No tags for this post.</p>	</div>
+
+	<footer class="amp-wp-article-footer">
+			<div class="amp-wp-meta amp-wp-tax-category">
+		Categories: <a href="../../category/lightning/index.html" rel="category tag">Lightning</a>	</div>
+
+		<div class="amp-wp-meta amp-wp-comments-link">
+		<a href="../index.html#respond">
+			Leave a Comment		</a>
+	</div>
+	</footer>
+</article>
+
+<footer class="amp-wp-footer">
+	<div>
+		<h2>ForceLearn</h2>
+		<p>
+			<a href="https://wordpress.org/">
+				Powered by WordPress			</a>
+		</p>
+		<a href="#top" class="back-to-top">Back to top</a>
+	</div>
+</footer>
+
+
+
+</body>
+
+<!-- Mirrored from www.forcelearn.com/salesforce-lightning-overview/amp/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 May 2019 05:29:04 GMT -->
+</html>
